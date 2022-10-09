@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
     fastbootd
 
+# Fdsan
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.fdsan=warn_once
+
 # Fingerprint
 #PRODUCT_PACKAGES += \
 #    android.hardware.biometrics.fingerprint@2.3-service.oplus
