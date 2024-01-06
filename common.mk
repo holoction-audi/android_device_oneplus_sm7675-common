@@ -275,10 +275,6 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
-# IR Blaster
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
-
 # Identity
 PRODUCT_PACKAGES += \
     android.hardware.identity-V5-ndk.vendor
