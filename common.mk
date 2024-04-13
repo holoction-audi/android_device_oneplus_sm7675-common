@@ -288,6 +288,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.rc \
     init.kernel.post_boot.sh \
