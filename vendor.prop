@@ -185,6 +185,7 @@ persist.vendor.sensors.debug.hal=0
 ro.virtual_ab.compression.threads=true
 
 # USB
+ro.usb.uvc.enabled=true
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=ffs
