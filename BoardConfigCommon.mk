@@ -69,9 +69,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_KERNEL_SEPARATED_DTBO := true
-#BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-#TARGET_NEEDS_DTBOIMAGE := true
+BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
+TARGET_NEEDS_DTBOIMAGE := true
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -119,59 +118,82 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 KERNEL_LTO := none
 
-TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8650
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
-#    vendor/pineapple_GKI.config \
-#    vendor/oplus/pineapple_GKI.config \
-#    vendor/debugfs.config
+    vendor/pineapple_GKI.config \
+    vendor/oplus/pineapple_GKI.config
 
 # Kernel modules
-#BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
-#BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
-#BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
-#BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
-#BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.vendor_boot))
-#BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
-#BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery $(COMMON_PATH)/modules.include.vendor_ramdisk))
-#SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.system_dlkm))
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.vendor_boot))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery $(COMMON_PATH)/modules.include.vendor_ramdisk))
+SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.system_dlkm))
+TARGET_MODULE_ALIASES += dump_device_info.ko:oplus_bsp_dfr_dump_device_info.ko
+TARGET_MODULE_ALIASES += dump_reason.ko:oplus_bsp_dfr_dump_reason.ko
+TARGET_MODULE_ALIASES += oplus_bsp_ir_core.ko:oplus_sensor_ir_core.ko
+TARGET_MODULE_ALIASES += oplus_bsp_kookong_ir_spi.ko:oplus_sensor_kookong_ir_spi.ko
+TARGET_MODULE_ALIASES += oplus_bsp_sensor_feedback.ko:oplus_sensor_feedback.ko
+TARGET_MODULE_ALIASES += oplus_bsp_tp_comon.ko:oplus_bsp_tp_common.ko
+TARGET_MODULE_ALIASES += oplus_bsp_tp_syna_comnon.ko:oplus_bsp_tp_syna_common.ko
+TARGET_MODULE_ALIASES += oplus_kmsg_wb.ko:oplus_bsp_dfr_kmsg_wb.ko
+TARGET_MODULE_ALIASES += oplus_phoenix.ko:oplus_bsp_dfr_phoenix.ko
+TARGET_MODULE_ALIASES += oplus_theia.ko:oplus_bsp_dfr_theia.ko
+TARGET_MODULE_ALIASES += shutdown_speed.ko:oplus_bsp_dfr_shutdown_speed.ko
+TARGET_MODULE_ALIASES += ssc_interact.ko:oplus_sensor_interact.ko
+TARGET_MODULE_ALIASES += synaptics_tcm2.ko:oplus_bsp_synaptics_tcm2.ko
+TARGET_MODULE_ALIASES += uff_fp_driver.ko:oplus_bsp_uff_fp_driver.ko
+TARGET_MODULE_ALIASES += pmic_monitor.ko:oplus_bsp_dfr_pmic_monitor.ko
+TARGET_MODULE_ALIASES += init_watchdog.ko:oplus_bsp_dfr_init_watchdog.ko
+TARGET_MODULE_ALIASES += keyevent_handler.ko:oplus_bsp_dfr_keyevent_handler.ko
+TARGET_MODULE_ALIASES += combkey_monitor.ko:oplus_bsp_dfr_combkey_monitor.ko
+TARGET_MODULE_ALIASES += force_shutdown.ko:oplus_bsp_dfr_force_shutdown.ko
+TARGET_MODULE_ALIASES += hung_task_enhance.ko:oplus_bsp_dfr_hung_task_enhance.ko
+TARGET_MODULE_ALIASES += init_watchdog.ko:oplus_bsp_dfr_init_watchdog.ko
+TARGET_MODULE_ALIASES += oplus_pmicwd.ko:oplus_bsp_dfr_pmic_watchdog.ko
+TARGET_MODULE_ALIASES += shutdown_detect.ko:oplus_bsp_dfr_shutdown_detect.ko
+TARGET_MODULE_ALIASES += phoenix_reboot_speed.ko:oplus_bsp_dfr_reboot_speed.ko
+TARGET_MODULE_ALIASES += last_boot_reason.ko:oplus_bsp_dfr_last_boot_reason.ko
 
-#TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8650-modules
-#TARGET_KERNEL_EXT_MODULES := \
-#	qcom/opensource/mmrm-driver \
-#	qcom/opensource/mm-drivers/hw_fence \
-#	qcom/opensource/mm-drivers/msm_ext_display \
-#	qcom/opensource/mm-drivers/sync_fence \
-#	qcom/opensource/securemsm-kernel \
-#	qcom/opensource/audio-kernel \
-#	qcom/opensource/camera-kernel \
-#	qcom/opensource/dataipa/drivers/platform/msm \
-#	qcom/opensource/datarmnet-ext/mem \
-#	qcom/opensource/datarmnet/core \
-#	qcom/opensource/datarmnet-ext/aps \
-#	qcom/opensource/datarmnet-ext/offload \
-#	qcom/opensource/datarmnet-ext/shs \
-#	qcom/opensource/datarmnet-ext/perf \
-#	qcom/opensource/datarmnet-ext/perf_tether \
-#	qcom/opensource/datarmnet-ext/sch \
-#	qcom/opensource/datarmnet-ext/wlan \
-#	qcom/opensource/display-drivers/msm \
-#	qcom/opensource/synx-kernel \
-#	qcom/opensource/dsp-kernel \
-#	qcom/opensource/eva-kernel \
-#	qcom/opensource/video-driver \
-#	qcom/opensource/graphics-kernel \
-#	qcom/opensource/wlan/platform \
-#	qcom/opensource/wlan/qcacld-3.0 \
-#	qcom/opensource/bt-kernel \
-#	qcom/opensource/spu-kernel \
-#	qcom/opensource/mm-sys-kernel/ubwcp \
-#	qcom/opensource/fingerprint \
-#	qcom/opensource/touch-drivers \
-#	nxp/opensource/driver \
-#	st/opensource/driver \
-#	st/opensource/eSE-driver
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8650-modules
+TARGET_KERNEL_EXT_MODULES := \
+	qcom/opensource/mmrm-driver \
+	qcom/opensource/mm-drivers/hw_fence \
+	qcom/opensource/mm-drivers/msm_ext_display \
+	qcom/opensource/mm-drivers/sync_fence \
+	qcom/opensource/securemsm-kernel \
+	qcom/opensource/audio-kernel \
+	qcom/opensource/camera-kernel \
+	qcom/opensource/dataipa/drivers/platform/msm \
+	qcom/opensource/datarmnet-ext/mem \
+	qcom/opensource/datarmnet/core \
+	qcom/opensource/datarmnet-ext/aps \
+	qcom/opensource/datarmnet-ext/offload \
+	qcom/opensource/datarmnet-ext/shs \
+	qcom/opensource/datarmnet-ext/perf \
+	qcom/opensource/datarmnet-ext/perf_tether \
+	qcom/opensource/datarmnet-ext/sch \
+	qcom/opensource/datarmnet-ext/wlan \
+	qcom/opensource/display-drivers/msm \
+	qcom/opensource/synx-kernel \
+	qcom/opensource/dsp-kernel \
+	qcom/opensource/eva-kernel \
+	qcom/opensource/video-driver \
+	qcom/opensource/graphics-kernel \
+	qcom/opensource/wlan/platform \
+	qcom/opensource/wlan/qcacld-3.0 \
+	qcom/opensource/bt-kernel \
+	qcom/opensource/spu-kernel \
+	qcom/opensource/mm-sys-kernel/ubwcp \
+	qcom/opensource/fingerprint \
+	qcom/opensource/touch-drivers \
+	nxp/opensource/driver \
+	st/opensource/driver \
+	st/opensource/eSE-driver
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
