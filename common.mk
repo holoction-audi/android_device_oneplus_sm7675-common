@@ -220,7 +220,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-V3-ndk.vendor
+    android.hardware.gnss-V3-ndk.vendor \
+    libsqlite.vendor \
+    libexif.vendor
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -399,6 +401,7 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor \
     libvndfwk_detect_jni.qti.vendor \
@@ -481,7 +484,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils-prd \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    libsysutils.vendor
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -524,7 +528,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
-    android.hardware.usb-V1-ndk.vendor
+    android.hardware.usb-V1-ndk.vendor \
+    libusbhost.vendor
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
