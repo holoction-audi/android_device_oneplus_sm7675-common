@@ -8,7 +8,7 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
-COMMON_PATH := device/oneplus/sm8650-common
+COMMON_PATH := device/oneplus/sm7675-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -120,7 +120,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 KERNEL_LTO := none
 
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8650
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm7675
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
 #    vendor/pineapple_GKI.config \
@@ -137,7 +137,7 @@ TARGET_KERNEL_CONFIG := \
 #BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery $(COMMON_PATH)/modules.include.vendor_ramdisk))
 #SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.system_dlkm))
 
-#TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8650-modules
+#TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm7675-modules
 #TARGET_KERNEL_EXT_MODULES := \
 #	qcom/opensource/mmrm-driver \
 #	qcom/opensource/mm-drivers/hw_fence \
@@ -200,9 +200,9 @@ BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlkm system_ext vendor vendor_dlkm
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 17175674880
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 16105078784
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_SUPER_PARTITION_SIZE := 17179869184
+BOARD_SUPER_PARTITION_SIZE := 16109273088
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
@@ -291,4 +291,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/sm8650-common/BoardConfigVendor.mk
+include vendor/oneplus/sm7675-common/BoardConfigVendor.mk
