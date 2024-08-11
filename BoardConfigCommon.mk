@@ -8,7 +8,7 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
-COMMON_PATH := device/oneplus/sm8650-common
+COMMON_PATH := device/oneplus/sm7675-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -118,7 +118,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 KERNEL_LTO := none
 
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8650
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm7675
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/pineapple_GKI.config \
@@ -159,7 +159,7 @@ TARGET_MODULE_ALIASES += shutdown_detect.ko:oplus_bsp_dfr_shutdown_detect.ko
 TARGET_MODULE_ALIASES += phoenix_reboot_speed.ko:oplus_bsp_dfr_reboot_speed.ko
 TARGET_MODULE_ALIASES += last_boot_reason.ko:oplus_bsp_dfr_last_boot_reason.ko
 
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8650-modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm7675-modules
 TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
 	qcom/opensource/mm-drivers/hw_fence \
@@ -313,4 +313,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/sm8650-common/BoardConfigVendor.mk
+include vendor/oneplus/sm7675-common/BoardConfigVendor.mk
