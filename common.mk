@@ -69,8 +69,8 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.pineapple
 
-AUDIO_HAL_DIR := hardware/qcom-caf/sm7675/audio/primary-hal
-AUDIO_PAL_DIR := hardware/qcom-caf/sm7675/audio/pal
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
+AUDIO_PAL_DIR := hardware/qcom-caf/sm8650/audio/pal
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
@@ -454,9 +454,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 # Shipping API
-BOARD_API_LEVEL := 34
-BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
-PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+BOARD_SHIPPING_API_LEVEL := 34
+PRODUCT_SHIPPING_API_LEVEL := 34
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
