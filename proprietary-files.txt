@@ -596,6 +596,9 @@ vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpp_manager.so
 vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
+vendor/lib64/libpwirishal.so
+vendor/lib64/libpwirishalwrapper.so
+vendor/lib64/libpwirisfeature.so
 vendor/lib64/libhistogram.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
@@ -638,6 +641,7 @@ vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so
 
 # Display (SDM)
+odm/lib64/libdisplaycolorfeature.so
 vendor/etc/clstc_config_library.xml
 vendor/etc/display/DPU10__.xml
 vendor/etc/display/DPU1010.xml
@@ -1134,6 +1138,11 @@ vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig-service.xml
+vendor/lib64/libcodec2_vndk.so
+vendor/lib64/libcodec2_hidl@1.0.so
+vendor/lib64/libcodec2_hidl@1.1.so
+vendor/lib64/libcodec2_hidl@1.2.so
+vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libqc2audio_base.so
@@ -1992,3 +2001,20 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Missing
+vendor/lib64/libtaautoload.so
+vendor/etc/init/vendor.qsap.location.rc
+vendor/etc/init/vendor.qsap.qapeservice.rc
+vendor/etc/init/vendor.qsap.sensors.rc
+vendor/bin/qsap_dcfd
+vendor/bin/qsap_location
+vendor/bin/qsap_qapeservice
+vendor/bin/qsap_sensors
+vendor/bin/qsap_voiceui
+vendor/etc/seccomp_policy/qsap_voiceui.policy
+vendor/etc/seccomp_policy/qsap_sensors.policy
+vendor/etc/seccomp_policy/qsap_qapeservice.policy
+vendor/etc/seccomp_policy/qsap_dcfd.policy
+vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
+vendor/lib64/libSensorsInterface.so
