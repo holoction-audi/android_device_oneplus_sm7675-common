@@ -119,7 +119,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device-V2-ndk.vendor \
     android.hardware.camera.metadata-V2-ndk.vendor \
     android.hardware.camera.provider-V2-ndk.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    android.frameworks.cameraservice.service@2.2.vendor \
+    libziparchive.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
@@ -143,6 +145,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
     android.hardware.graphics.composer3-V2-ndk.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.common-V4-ndk.vendor \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     libdisplayconfig.qti \
@@ -178,7 +181,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.postproc-V1-ndk.vendor
+    vendor.qti.hardware.display.postproc-V1-ndk.vendor \
+    libutilscallstack.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
@@ -210,7 +214,8 @@ PRODUCT_COPY_FILES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-V1-ndk.vendor \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libgatekeeper.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -222,7 +227,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V3-ndk.vendor \
     libsqlite.vendor \
-    libexif.vendor
+    libexif.vendor \
+    libcurl.vendor
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -309,8 +315,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -331,9 +337,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_vndk.vendor \
-    libpalclient
+    libpalclient \
+    android.hardware.media.bufferpool2-V1-ndk.vendor
 
 # Memtrack
 PRODUCT_PACKAGES += \
@@ -341,7 +346,8 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd-V1-ndk.vendor
+    android.system.net.netd-V1-ndk.vendor \
+    android.system.net.netd@1.1.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
