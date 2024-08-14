@@ -639,6 +639,8 @@ vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so
 # Display (SDM)
 vendor/etc/clstc_config_library.xml
 vendor/etc/display/DPU10__.xml
+vendor/etc/display/DPU1010.xml
+vendor/etc/display/DPU870.xml
 vendor/etc/display/DPU9__.xml
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/thermallevel_to_fps.xml
