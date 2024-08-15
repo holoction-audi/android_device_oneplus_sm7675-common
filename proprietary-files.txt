@@ -344,7 +344,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -829,6 +828,16 @@ odm/vendor/firmware/uff_spi.b06
 odm/vendor/firmware/uff_spi.b07
 odm/vendor/firmware/uff_spi.b08
 odm/vendor/firmware/uff_spi.mdt
+
+# FM
+system_ext/lib/vendor.qti.hardware.fm@1.0.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so   
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/libqmi.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/libqmi.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
@@ -1923,6 +1932,7 @@ vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 # WiFi
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wpa_supplicant_overlay.conf
@@ -2009,3 +2019,30 @@ vendor/etc/seccomp_policy/qsap_qapeservice.policy
 vendor/etc/seccomp_policy/qsap_dcfd.policy
 vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
 vendor/lib64/libSensorsInterface.so
+vendor/firmware/dpAP_full.mbn
+vendor/firmware/dpAP_mini.mbn
+vendor/firmware/dpAP_modemssr.mbn
+vendor/firmware/dpMSA.mbn
+vendor/firmware/tof8801_firmware.bin
+vendor/firmware/wigig.ini
+odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
+odm/firmware/ufs/ufs_version_config.xml
+vendor/bin/hw/qvrservice
+vendor/etc/init/qvrd_vndr.rc
+
+vendor/bin/hw/android.hardware.usb-service.qti
+vendor/bin/init.qcom.usb.sh
+vendor/etc/init/android.hardware.usb-service.qti.rc
+vendor/etc/init/hw/init.qcom.usb.rc
+vendor/etc/vintf/manifest/android.hardware.usb-service.qti.xml
+
+odm/etc/wifi.cfg
+odm/etc/wifi/bin_version
+odm/etc/wifi/cnss_diag.conf
+odm/etc/wifi/cnss_diag_always_on.conf
+odm/etc/wifi/qca6750/bdwlan.elf
+odm/etc/wifi/qca6750/regdb.bin
+odm/etc/wifi/regdb.bin
+odm/etc/wifi/regdb_version
+odm/etc/wifi/sar-vendor-cmd.xml
+odm/etc/wifi/wifisar.cfg

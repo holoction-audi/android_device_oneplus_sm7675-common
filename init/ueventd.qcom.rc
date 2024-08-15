@@ -62,7 +62,13 @@
 # Firmware directory Path
 # Below macro will be read by uevent and path will
 # be added to search path for firmware loading
-firmware_directories /vendor/firmware_mnt/image/
+# ifndef OPLUS_FEATURE_WIFI_BDF
+# fangzhijun@CONNECTIVITY.WIFI.HARDWARE.BDF.5719240 , 2023/06/13,
+# Modify for: multi projects using different bdf, adding persist into firmware_directories
+# firmware_directories /vendor/firmware_mnt/image/
+# else /* OPLUS_FEATURE_WIFI_BDF */
+firmware_directories /mnt/vendor/persist/copy/ /odm/etc/wifi/ /mnt/vendor/persist/ /vendor/firmware_mnt/image/
+# endif /* OPLUS_FEATURE_WIFI_BDF */
 
 subsystem dma_heap
     devname uevent_devpath
@@ -482,7 +488,6 @@ subsystem mem_buf_vm
 /sys/bus/usb/devices/usb*   authorized                 0660  system  usb
 
 #USB mode setting
-/sys/bus/platform/devices/a400000.ssusb    mode        0660  system  usb
 /sys/bus/platform/devices/a600000.ssusb    mode        0660  system  usb
 /sys/bus/platform/devices/4e00000.ssusb    mode        0660  system  usb
 
@@ -523,6 +528,7 @@ subsystem mem_buf_vm
 /sys/class/graphics/fb0     modes                    0664    system  graphics
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
+*/
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
@@ -592,6 +598,9 @@ subsystem mem_buf_vm
 
 #Virtualization Attributes
 /dev/gunyah                 0666   root     root
+
+# Tango 32-bit kernel support
+/dev/tango32                0666   system     system
 
 # Q2SPI UWB device
 /dev/q2spiuwb    0660    uwb    uwb
