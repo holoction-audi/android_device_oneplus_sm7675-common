@@ -247,8 +247,6 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
-    # Create hexlp directory
-    mkdir /mnt/vendor/persist/hexlp 0770 media media
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
@@ -425,11 +423,12 @@ on post-fs-data
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
-    # Create hexlp directory
-    mkdir /data/vendor/hexlp 0770 media media
-
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
+
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/trigger
+    chown system system /sys/class/leds/white/light_sensor
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
@@ -528,6 +527,8 @@ on property:sys.boot_completed=1
     setprop lmkd.reinit 1
     chown media audio /sys/kernel/aud_dev/state
     write /sys/devices/virtual/cvp/cvp/boot 1
+    chmod 400 /sys/devices/platform/soc/1d84000.ufshc/devfreq/1d84000.ufshc/max_freq
+    chmod 400 /sys/devices/platform/soc/1d84000.ufshc/devfreq/1d84000.ufshc/min_freq
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -917,13 +918,15 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      group system
      capabilities SYS_NICE
      disabled
-
-service chre /vendor/bin/chre
-    class late_start
-    user system
-    group system
-    socket chre seqpacket 0660 root system
-    shutdown critical
+#ifndef VENDOR_EDIT
+#Nanwei.Deng@PSW.BSP.POWER 2018/11/21 add to remove the useless chre for power.
+#service chre /vendor/bin/chre
+#    class late_start
+#    user system
+#    group system
+#    socket chre seqpacket 0660 root system
+#    shutdown critical
+#endif /*VENDOR_EDIT*/
 
 on property:vendor.chre.enabled=0
    stop chre
@@ -941,3 +944,8 @@ on property:vendor.opengles.version=*
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
+
+#close ufs to avoid power consumption ,after close shutdown charging
+on boot && property:ro.bootmode=charger
+    write /sys/devices/platform/soc/1d84000.ufshc/clkscale_enable 1
+    write /sys/devices/platform/soc/1d84000.ufshc/clkgate_enable 1
