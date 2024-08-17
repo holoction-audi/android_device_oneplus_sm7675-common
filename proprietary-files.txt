@@ -329,10 +329,12 @@ vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
+odm/etc/bluetooth.cfg
 
 # Bluetooth (A2DP)
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
@@ -363,6 +365,12 @@ odm/firmware/fastchg/smart_chg_config_table.txt
 vendor/etc/charger_fw_fstab.qti
 
 # CNE
+-system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
+-system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar
+system_ext/lib64/libqmi_cci_system.so
+system_ext/lib64/libqmi_encdec_system.so
+system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
+system_ext/lib64/vendor.qti.hardware.data.qmiaidlservice-V1-ndk.so
 vendor/app/CACertService/CACertService.apk
 vendor/app/CneApp/CneApp.apk
 vendor/app/IWlanService/IWlanService.apk
@@ -461,6 +469,7 @@ vendor/etc/ssg/tz_whitelist.json
 # Context hub
 vendor/bin/hw/android.hardware.contexthub-service.qmi
 vendor/etc/init/android.hardware.contexthub-service.qmi.rc
+vendor/etc/chre/preloaded_nanoapps.json
 
 # CVP
 system_ext/lib/vendor.qti.hardware.cvp@1.0.so
@@ -971,7 +980,7 @@ vendor/lib64/libmm-hdcpmgr.so
 #my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 
 # IMS
-#system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
@@ -998,7 +1007,7 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-#system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk
 vendor/bin/ims-dataservice-daemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
@@ -1074,6 +1083,11 @@ vendor/lib64/hw/consumerir.default.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-pineapple.sh
+vendor/bin/init.kernel.post_boot-cliffs.sh
+vendor/bin/init.kernel.post_boot-cliffs_2_2_1.sh
+vendor/bin/init.kernel.post_boot-cliffs_2_3_0.sh
+vendor/bin/init.kernel.post_boot-cliffs_3_3_1.sh
+vendor/bin/init.kernel.post_boot-cliffs_default_3_4_1.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.class_core.sh
 vendor/bin/init.qcom.post_boot.sh
@@ -1739,6 +1753,7 @@ vendor/lib64/libsxrservice_client.qti.so
 
 # Sensors
 odm/bin/oplus_sensor_fb
+odm/bin/oplus_sensor_ssr
 odm/lib64/liboplus_service.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
@@ -2046,3 +2061,57 @@ odm/etc/wifi/regdb.bin
 odm/etc/wifi/regdb_version
 odm/etc/wifi/sar-vendor-cmd.xml
 odm/etc/wifi/wifisar.cfg
+odm/bin/wifi_diag
+odm/bin/wififtm
+odm/bin/wifisar
+
+odm/etc/libnfc-nci.conf
+odm/etc/lra_model_0.conf
+odm/etc/media_codecs_c2.xml
+odm/etc/media_codecs_vendor_oplus.xml
+odm/etc/media_profiles_V1_0.xml
+odm/etc/modem_custom.cfg
+odm/etc/modem_data.cfg
+odm/etc/modem_data_pb.cfg
+odm/etc/modem_reg_pb.cfg
+odm/etc/modem_rf.cfg
+odm/etc/modem_simcard.cfg
+odm/etc/modem_voice.cfg
+
+odm/etc/p_7_a0001_backlight_data.xml
+odm/etc/p_7_a0001_cinema_eyeprotect_data.xml
+odm/etc/p_7_a0001_colorful_eyeprotect_data.xml
+odm/etc/p_7_a0001_eyeprotect_data.xml
+odm/etc/p_7_a0001_srgb_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_cinema_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_colorful_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_srgb_eyeprotect_data.xml
+
+odm/etc/sensor.cfg
+
+odm/lib64/libtfavib.so
+odm/lib64/libchrome.so
+odm/lib64/libcppbor_external.so
+odm/lib64/libdpaservice.so
+odm/lib64/libfido2_factory.so
+odm/lib64/libfido_factory.so
+odm/lib64/libifaa_factory.so
+odm/lib64/libjc_keymint_nxp.so
+odm/lib64/libjc_keymint_transport_nxp.so
+odm/lib64/jcos_nq_client.so
+
+vendor/lib64/ftm_fm_lib.so
+vendor/lib64/com.qti.settings.sm8650.so
+vendor/bin/qlm-service
+vendor/bin/ftmdaemon
+vendor/bin/ftm_power_config.sh
+vendor/bin/fmconfig
+vendor/bin/fm_qsoc_patches
+vendor/bin/cnss_cli
+vendor/bin/cnss_diag
+vendor/bin/qdss_qmi_helper
+vendor/lib64/libsensor_calibration.so
+vendor/lib64/libqsh_ble_pb.so
+vendor/bin/ccid_daemon_nr
+vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini

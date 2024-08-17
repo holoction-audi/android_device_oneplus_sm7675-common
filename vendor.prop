@@ -180,6 +180,11 @@ vendor.usb.use_ffs_mtp=1
 sys.usb.mtp.batchcancel=1
 vendor.usb.use_gadget_hal=0
 
+# SKU
+ro.boot.product.vendor.sku=cliffs
+ro.soc.model=SM7675
+ro.odm.build.media_performance_class=31
+
 # WiFi
 wifi.aware.interface=wifi-aware0
 

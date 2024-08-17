@@ -247,6 +247,8 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
+    # Create hexlp directory
+    mkdir /mnt/vendor/persist/hexlp 0770 media media
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
@@ -422,6 +424,9 @@ on post-fs-data
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
+
+    # Create hexlp directory
+    mkdir /data/vendor/hexlp 0770 media media
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
@@ -699,7 +704,7 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service ssgqmigd /vendor/bin/ssgqmigd
+service ssgqmigd /vendor/bin/ssgqmigd64
     class late_start
     user radio
     group radio gps system
@@ -918,15 +923,13 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      group system
      capabilities SYS_NICE
      disabled
-#ifndef VENDOR_EDIT
-#Nanwei.Deng@PSW.BSP.POWER 2018/11/21 add to remove the useless chre for power.
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
-#endif /*VENDOR_EDIT*/
+
+service chre /vendor/bin/chre
+    class late_start
+    user system
+    group system
+    socket chre seqpacket 0660 root system
+    shutdown critical
 
 on property:vendor.chre.enabled=0
    stop chre
