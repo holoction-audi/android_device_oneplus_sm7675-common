@@ -672,6 +672,15 @@ vendor/lib64/libubwcp.so
 vendor/lib64/libvmfilexfer.so
 
 # Display calibration data
+odm/etc/p_7_a0001_backlight_data.xml
+odm/etc/p_7_a0001_cinema_eyeprotect_data.xml
+odm/etc/p_7_a0001_colorful_eyeprotect_data.xml
+odm/etc/p_7_a0001_eyeprotect_data.xml
+odm/etc/p_7_a0001_srgb_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_cinema_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_colorful_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_eyeprotect_data.xml
+odm/etc/samsung1024_s6e3hc3_srgb_eyeprotect_data.xml
 vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
@@ -1105,6 +1114,9 @@ vendor/lib64/vendor.qti.hardware.limits@1.2.so
 odm/lib64/libc2filterplugin.so
 odm/lib64/libosie_process.so
 odm/lib64/libosie_stub.so
+odm/etc/media_codecs_c2.xml
+odm/etc/media_codecs_vendor_oplus.xml
+odm/etc/media_profiles_V1_0.xml
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/qconfigservice
@@ -1220,18 +1232,16 @@ odm/lib64/libarc.ion.so
 
 # NFC
 odm/bin/hw/android.hardware.nfc-service.nxp
-odm/lib/libpnscr2_aidl.so
-odm/lib/nfc_nci.nqx.default.hw.so
-odm/lib/vendor.nxp.hardware.nfc@1.0.so
-odm/lib/vendor.nxp.hardware.nfc@1.1.so
-odm/lib/vendor.nxp.hardware.nfc@2.0.so
-odm/lib/vendor.nxp.nxpnfc_aidl-V1-ndk.so
+odm/etc/libnfc-nci.conf
 odm/lib64/libpnscr2_aidl.so
 odm/lib64/nfc_nci.nqx.default.hw.so
 odm/lib64/vendor.nxp.hardware.nfc@1.0.so
 odm/lib64/vendor.nxp.hardware.nfc@1.1.so
 odm/lib64/vendor.nxp.hardware.nfc@2.0.so
 odm/lib64/vendor.nxp.nxpnfc_aidl-V1-ndk.so
+odm/lib64/libjc_keymint_nxp.so
+odm/lib64/libjc_keymint_transport_nxp.so
+odm/lib64/jcos_nq_client.so
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
@@ -1428,12 +1438,14 @@ vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
+vendor/bin/qlm-service
 vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib64/libidl.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqsh_ble_pb.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
@@ -1473,8 +1485,10 @@ vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so
 vendor/lib64/vendor.qti.hardware.servicetrackeraidl-V1-ndk.so
 
 # QVR
+vendor/bin/hw/qvrservice
 vendor/bin/qvrdatalogger
 vendor/bin/qvrservicetest
+vendor/etc/init/qvrd_vndr.rc
 vendor/etc/qvr/cfg/557/0/65536/mtplanai.txt
 vendor/etc/qvr/cfg/557/0/65536/mtplanai_6dof_config.xml
 vendor/etc/qvr/cfg/557/0/65536/mtplanai_qvr_3dof_tracker_config.txt
@@ -1517,6 +1531,7 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrilNrd
+vendor/bin/ccid_daemon_nr
 vendor/bin/ks
 vendor/bin/qms
 vendor/bin/qtigetprop
@@ -1967,10 +1982,34 @@ vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 # WiFi
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/init/qvrd_vndr.rc
+vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/lib64/libcert_parse.wpa_s.so
+vendor/firmware/dpAP_full.mbn
+vendor/firmware/dpAP_mini.mbn
+vendor/firmware/dpAP_modemssr.mbn
+vendor/firmware/dpMSA.mbn
+vendor/firmware/tof8801_firmware.bin
+vendor/firmware/wigig.ini
+odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
+odm/firmware/ufs/ufs_version_config.xml
+odm/etc/wifi.cfg
+odm/etc/wifi/bin_version
+odm/etc/wifi/cnss_diag.conf
+odm/etc/wifi/cnss_diag_always_on.conf
+odm/etc/wifi/qca6750/bdwlan.elf
+odm/etc/wifi/qca6750/regdb.bin
+odm/etc/wifi/regdb.bin
+odm/etc/wifi/regdb_version
+odm/etc/wifi/sar-vendor-cmd.xml
+odm/etc/wifi/wifisar.cfg
+odm/bin/wifi_diag
+odm/bin/wififtm
+odm/bin/wifisar
 
 # WiFi Display
 system/framework/WfdCommon.jar

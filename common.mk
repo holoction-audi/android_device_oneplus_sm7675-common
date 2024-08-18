@@ -134,6 +134,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.contexthub-V2-ndk.vendor
 
+# Chrome
+PRODUCT_PACKAGES += \
+    libchrome.vendor
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -315,8 +319,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.1-service.oplus
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -431,6 +435,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sap-V1-ndk.vendor \
     android.hardware.radio.sim-V2-ndk.vendor \
     android.hardware.radio.voice-V2-ndk.vendor \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
 
 # Sensors
