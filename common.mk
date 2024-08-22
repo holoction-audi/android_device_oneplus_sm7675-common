@@ -432,7 +432,6 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config-V2-ndk.vendor \
     android.hardware.radio-V2-ndk.vendor \
     android.hardware.radio.config-V2-ndk.vendor \
     android.hardware.radio.data-V2-ndk.vendor \

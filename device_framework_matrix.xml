@@ -59,6 +59,24 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.appradio</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusAppRadio</name> 
+            <instance>oplus_app_slot1</instance>
+            <instance>oplus_app_slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IOplusRadio</name>    
+            <instance>oplus_slot1</instance>    
+            <instance>oplus_slot2</instance>    
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.radio</name>
         <version>2</version>

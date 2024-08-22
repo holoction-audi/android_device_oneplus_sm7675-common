@@ -37,7 +37,34 @@ persist.data.df.agg.dl_size=4096
 persist.vendor.data.mode=concurrent
 
 # Radio
+persist.vendor.radio.poweron_opt=1
+persist.radio.hvolte.enable=1
 ril.subscription.types=NV,RUIM
+telephony.lteOnCdmaDevice=1
+telephony.active_modems.max_count=2
+ro.vendor.use_data_netmgrd=true
+persist.vendor.data.mode=concurrent
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+
+# Rmnet
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
