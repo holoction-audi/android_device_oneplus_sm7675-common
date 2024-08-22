@@ -149,4 +149,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.subsys_interface.subsys_radio</name>
+        <interface>
+            <name>ISubsysRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

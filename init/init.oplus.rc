@@ -11,12 +11,44 @@ on fs
 on boot
     # Display
     chown system system /dev/oplus_display
+    chown system system /sys/kernel/oplus_display/dump_info
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/seed
+    chown system system /sys/kernel/oplus_display/panel_pwr
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
-    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/ffl_set
+    chown system system /sys/kernel/oplus_display/dimlayer_hbm
+    chown system system /sys/kernel/oplus_display/force_screenfp
     chown system system /sys/kernel/oplus_display/notify_fppress
-    chown system system /sys/kernel/oplus_display/panel_serial_number
+    chown system system /sys/kernel/oplus_display/aod_light_mode_set
+    chown system system /sys/kernel/oplus_display/power_status
+    chown system system /sys/kernel/oplus_display/sau_closebl_node
+    chown system system /sys/kernel/oplus_display/esd_status
+    chown system system /sys/kernel/oplus_display/spr
+    chown system system /sys/kernel/oplus_display/write_panel_reg
+    chown system system /sys/kernel/oplus_display/max_brightness
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/ffc_mode
 
-    chmod 0000 /sys/kernel/oplus_display/hbm
+    chmod 0666 /dev/oplus_display
+    chmod 0666 /sys/kernel/oplus_display/dump_info
+    chmod 0666 /sys/kernel/oplus_display/hbm
+    chmod 0666 /sys/kernel/oplus_display/seed
+    chmod 0666 /sys/kernel/oplus_display/panel_pwr
+    chmod 0666 /sys/kernel/oplus_display/dimlayer_bl_en
+    chmod 0666 /sys/kernel/oplus_display/ffl_set
+    chmod 0666 /sys/kernel/oplus_display/dimlayer_hbm
+    chmod 0666 /sys/kernel/oplus_display/force_screenfp
+    chmod 0666 /sys/kernel/oplus_display/notify_fppress
+    chmod 0666 /sys/kernel/oplus_display/aod_light_mode_set
+    chmod 0666 /sys/kernel/oplus_display/power_status
+    chmod 0666 /sys/kernel/oplus_display/sau_closebl_node
+    chmod 0666 /sys/kernel/oplus_display/esd_status
+    chmod 0666 /sys/kernel/oplus_display/spr
+    chmod 0666 /sys/kernel/oplus_display/write_panel_reg
+    chmod 0666 /sys/kernel/oplus_display/max_brightness
+    chmod 0666 /sys/kernel/oplus_display/dynamic_osc_clock
+    chmod 0666 /sys/kernel/oplus_display/ffc_mode
 
     # Audio HAL feedback
     chown media media /proc/mm_fb
@@ -153,3 +185,18 @@ service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     group system
     class late_start
     oneshot
+
+on property:ro.bootmode=charger
+    stop vendor.per_mgr
+    stop vendor.per_proxy
+
+on property:sys.boot_completed=1
+    copy /vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm /mnt/vendor/persist/data/pfm/licenses/oem_51_prj_OppoLTM8650_1689712162019.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oem_51_prj_OppoLTM8650_1689712162019.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/oem_51_prj_OppoLTM8650_1689712162019.pfm
+
+on property:sys.boot_completed=1
+    copy /vendor/etc/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm /mnt/vendor/persist/data/pfm/licenses/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
+

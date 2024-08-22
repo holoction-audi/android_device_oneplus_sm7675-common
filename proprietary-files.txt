@@ -344,7 +344,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -580,6 +579,7 @@ vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
 vendor/lib64/libPanelChaplin.so
 
 # Display (HDR)
+vendor/etc/dolby_vision.cfg
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
@@ -671,6 +671,11 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libubwcp.so
 vendor/lib64/libvmfilexfer.so
 
+# Display configs
+vendor/etc/displayconfig/display_id_4630946450791512195.xml
+vendor/etc/displayconfig/display_id_4630946614210407555.xml
+vendor/etc/displayconfig/display_id_4630946994637926275.xml
+
 # Display calibration data
 odm/etc/p_7_a0001_backlight_data.xml
 odm/etc/p_7_a0001_cinema_eyeprotect_data.xml
@@ -736,6 +741,9 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.qti.hardware.display.color-V1-ndk.so
+
+# Display licenses
+vendor/etc/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
 
 # DPM
 system_ext/bin/dpmd
@@ -840,12 +848,21 @@ odm/vendor/firmware/uff_spi.b07
 odm/vendor/firmware/uff_spi.b08
 odm/vendor/firmware/uff_spi.mdt
 
+# FM
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so   
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/etc/init/init.qti.fm.rc
+vendor/etc/init.qti.fm.sh
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
 vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
 
 # Graphics (Adreno)
+vendor/etc/init/init.qti.graphics.rc
+vendor/bin/init.qti.graphics.sh
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -976,12 +993,28 @@ system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/rsmcService.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/etc/permissions/vendor.qti.imsdcservice.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/rsmcService.jar
 system_ext/framework/sts-telephony-plugin.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
@@ -989,9 +1022,15 @@ system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -1000,6 +1039,48 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
+system_ext/lib64/vendor.qti.ims.factory@1.0.so
+system_ext/lib64/vendor.qti.ims.factory@1.1.so
+system_ext/lib64/vendor.qti.ims.factory@2.0.so
+system_ext/lib64/vendor.qti.ims.factory@2.1.so
+system_ext/lib64/vendor.qti.ims.factory@2.2.so
+system_ext/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.7.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.8.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.9.so
+system_ext/lib64/vendor.qti.ims.callcapability@1.0.so
+system_ext/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
+system_ext/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.configservice@1.0.so
+system_ext/lib64/vendor.qti.ims.configservice@1.1.so
+system_ext/lib64/vendor.qti.ims.connection@1.0.so
+system_ext/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
+system_ext/lib64/vendor.qti.ims.rcssip@1.0.so
+system_ext/lib64/vendor.qti.ims.rcssip@1.1.so
+system_ext/lib64/vendor.qti.ims.rcssip@1.2.so
+system_ext/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.rcsuce@1.0.so
+system_ext/lib64/vendor.qti.ims.rcsuce@1.1.so
+system_ext/lib64/vendor.qti.ims.rcsuce@1.2.so
+system_ext/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk
@@ -1013,6 +1094,7 @@ vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/vintf/manifest/ImsRtpService-aidl.xml
 vendor/etc/vintf/manifest/imsdcservice-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.ims.factoryaidlservice.xml
+vendor/etc/init/vendor.qti.smp2p.rc
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
@@ -1242,6 +1324,7 @@ odm/lib64/vendor.nxp.nxpnfc_aidl-V1-ndk.so
 odm/lib64/libjc_keymint_nxp.so
 odm/lib64/libjc_keymint_transport_nxp.so
 odm/lib64/jcos_nq_client.so
+vendor/etc/hal_uuid_map_config.xml
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
@@ -1439,6 +1522,7 @@ vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/bin/qlm-service
+vendor/etc/init/init.qlm-service.rc
 vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
@@ -1517,6 +1601,13 @@ vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
 
 # RIL
 odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
+odm/etc/modem_custom.cfg
+odm/etc/modem_data.cfg
+odm/etc/modem_data_pb.cfg
+odm/etc/modem_reg_pb.cfg
+odm/etc/modem_rf.cfg
+odm/etc/modem_simcard.cfg
+odm/etc/modem_voice.cfg
 odm/lib64/lib-virtual-modem-protos.so
 odm/lib64/libcommcenterfw.so
 odm/lib64/libcommcenterutils.so
@@ -1524,6 +1615,7 @@ odm/lib64/libdmtp-protos-lite.so
 odm/lib64/libdmtp.so
 odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
+system_ext/app/QtiTelephony/QtiTelephony.apk|2404b75f9ac78a7f7dd97ea1a0ab3623fba59788
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -1541,6 +1633,8 @@ vendor/etc/O_TDD-Bypass_SM7675_platform_license.pfm
 vendor/etc/O_TDD-Bypass_platform_license.pfm
 vendor/etc/SDA_platform_license.pfm
 vendor/etc/SNS_platform_license.pfm
+vendor/etc/SNS_platform_license_for_SM7675.pfm
+vendor/etc/SNS_platform_license_for_SM8635.pfm
 vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/qms.rc
 vendor/etc/qcril_database/qcrilNr.db
@@ -1912,6 +2006,8 @@ odm/firmware/ufs/SKhynix-HN8T05DEHKX073.bin
 odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
 
 # Vibro firmware
+odm/firmware/aw8697_rtp.bin
+odm/firmware/aw8697_rtp_lighthouse.bin
 odm/firmware/aw8697_haptic.bin
 odm/firmware/aw8697_haptic_170.bin
 odm/firmware/aw8697_haptic_170_soft.bin
@@ -1955,6 +2051,7 @@ vendor/lib64/libvideoutils.so
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
+vendor/etc/configstore/wigig.xml
 vendor/etc/init/vppservice.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.vpp-service.xml
 vendor/lib64/libvppclient.so
@@ -1982,12 +2079,16 @@ vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 # WiFi
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
+vendor/bin/init.crda.sh
+vendor/bin/init.qcom.sdio.sh
 vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/init/qvrd_vndr.rc
 vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/hostapd/hostapd.accept
+vendor/etc/hostapd/hostapd_default.conf
+vendor/etc/hostapd/hostapd.deny
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
@@ -2077,6 +2178,8 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
 # Missing
+vendor/bin/ipacm
+vendor/lib64/libipanat.so
 vendor/lib64/libtaautoload.so
 vendor/etc/init/vendor.qsap.location.rc
 vendor/etc/init/vendor.qsap.qapeservice.rc
@@ -2091,4 +2194,6 @@ vendor/etc/seccomp_policy/qsap_sensors.policy
 vendor/etc/seccomp_policy/qsap_qapeservice.policy
 vendor/etc/seccomp_policy/qsap_dcfd.policy
 vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
+vendor/etc/init/dcfd.rc
 vendor/lib64/libSensorsInterface.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V2-ndk.so
