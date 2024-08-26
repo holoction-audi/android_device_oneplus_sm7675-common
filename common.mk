@@ -323,6 +323,7 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/service/1.0/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 
 PRODUCT_PACKAGES += \
+    android.hardware.media.bufferpool2-V1-ndk.vendor \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.2.vendor \
@@ -528,7 +529,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
-    android.hardware.usb-V1-ndk.vendor
+    android.hardware.usb-V1-ndk.vendor \
+    libusbhost.vendor
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
@@ -589,4 +591,4 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/sysinit/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/sm8650-common/sm8650-common-vendor.mk)
+$(call inherit-product, vendor/oneplus/sm7675-common/sm7675-common-vendor.mk)
