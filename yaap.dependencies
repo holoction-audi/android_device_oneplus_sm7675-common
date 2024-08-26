@@ -4,15 +4,15 @@
     "target_path": "hardware/oplus"
   },
   {
-    "repository": "kernel_oneplus_sm8650",
-    "target_path": "kernel/oneplus/sm8650"
+    "repository": "kernel_oneplus_sm7675",
+    "target_path": "kernel/oneplus/sm7675"
   },
   {
-    "repository": "kernel_oneplus_sm8650-devicetrees",
-    "target_path": "kernel/oneplus/sm8650-devicetrees"
+    "repository": "kernel_oneplus_sm7675-devicetrees",
+    "target_path": "kernel/oneplus/sm7675-devicetrees"
   },
   {
-    "repository": "kernel_oneplus_sm8650-modules",
-    "target_path": "kernel/oneplus/sm8650-modules"
+    "repository": "kernel_oneplus_sm7675-modules",
+    "target_path": "kernel/oneplus/sm7675-modules"
   }
 ]
