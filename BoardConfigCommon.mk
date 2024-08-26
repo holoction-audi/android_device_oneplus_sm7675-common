@@ -69,9 +69,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_KERNEL_SEPARATED_DTBO := true
-#BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-#TARGET_NEEDS_DTBOIMAGE := true
+BOARD_RAMDISK_USE_LZ4 := true
+TARGET_NEEDS_DTBOIMAGE := true
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -116,12 +115,12 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
-KERNEL_LTO := none
+# KERNEL_LTO := none
 
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm7675
-TARGET_KERNEL_CONFIG := \
-    gki_defconfig \
+# TARGET_FORCE_PREBUILT_KERNEL := true
+# TARGET_KERNEL_SOURCE := kernel/oneplus/sm7675
+# TARGET_KERNEL_CONFIG := \
+#     gki_defconfig \
 #    vendor/pineapple_GKI.config \
 #    vendor/oplus/pineapple_GKI.config \
 #    vendor/debugfs.config
