@@ -78,6 +78,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.olc2</name>
+        <version>2</version>
+        <interface>
+            <name>IOplusLogCore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.sendextcamcmd</name>
         <version>2</version>
         <interface>
