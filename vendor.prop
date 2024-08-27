@@ -63,6 +63,9 @@ persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
 
+# Camera
+ro.camera.enableCamera1MaxZsl=1
+
 # Chipset
 ro.soc.manufacturer=QTI
 
