@@ -1593,7 +1593,6 @@ odm/lib64/libSnpeCpu.so
 odm/lib64/libSnpeGpu.so
 odm/lib64/libUpScale.so
 odm/lib64/lib_android_keymaster_keymint_utils.so
-odm/lib64/libaacvibrator.so
 odm/lib64/libbinaural_record_session_aidl.so
 odm/lib64/libchrome.so
 odm/lib64/libdisplayaidlapis.so
@@ -1610,7 +1609,6 @@ odm/lib64/libml_util.so
 odm/lib64/liboemcrypto.so
 odm/lib64/libofm.so
 odm/lib64/liboplus_spat_audiox.so
-odm/lib64/liboplusvibratoreffect.so
 odm/lib64/liboppo_audiox.so
 odm/lib64/libormshalclient.so
 odm/lib64/libportrait_repair_ppl3_ocl.so
@@ -1633,7 +1631,6 @@ odm/lib64/libsdk_sr_ref.so
 odm/lib64/libsecurity_event_dcs.so
 odm/lib64/libsecurity_event_dcs_vnd.so
 odm/lib64/libsfplugin_ccodec_utils.so
-odm/lib64/libsivibrator.so
 odm/lib64/libsnpeml.so
 odm/lib64/libsoft_attestation_cert.so
 odm/lib64/libssd_det.so
@@ -3279,6 +3276,21 @@ odm/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin
 odm/firmware/ufs/SAMSUNG-KLUFG8RHHD-B0G1.bin
 odm/firmware/ufs/SKhynix-HN8T05DEHKX073.bin
 odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
+
+# Vibrator
+odm/bin/hw/vendor.oplus.hardware.vibrator-service
+odm/etc/aac_richtap.config
+odm/etc/init/vibrator-default.rc
+odm/etc/vintf/manifest/vibrator-default.xml
+odm/lib64/android.hardware.vibrator-V2-ndk.so
+odm/lib64/libaacvibrator.so
+odm/lib64/liboplusvibratoreffect.so
+odm/lib64/libsivibrator.so
+odm/lib64/vendor.aac.hardware.richtap.vibrator-V2-ndk.so
+odm/lib64/vendor.oplus.hardware.oplusvibrator-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.vibrator-V1-ndk.so
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/libvibratorutils.so
 
 # Video
 vendor/lib64/libstreamparser.so
