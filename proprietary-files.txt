@@ -2324,11 +2324,11 @@ vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
-# Hotword Enrollment
-#my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
-#my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-#my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-#my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+# Hotword Enrollment - avalon
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
+my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|9153e65b649fee516fce1dfd4fa175a3d57f24ab
+my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|e9b05d287c6ffec0567c1fb23041948bd898a496
+my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|d117e974a77fb96f6c90150ed51d1e8fc9ef8ea3
 
 # IMS(SYSTEM) - pinned from LA.QSSI.14.0.r1-16400-qssi.0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
@@ -2585,7 +2585,19 @@ odm/lib64/libapsultrahdr.so
 odm/lib64/libarc.ion.so
 
 # NFC
+odm/etc/nfc/st21nfc_fw7.bin_st21h
+odm/etc/nfc/st21nfc_fw.bin_st21h
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_36
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_30
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_2B
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_23
+odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68
+odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_60
+odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
+odm/etc/nfc/libnfc-mtp-SN220.conf_22877:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
 odm/bin/hw/android.hardware.nfc-service.nxp
+odm/etc/init/nfc-service-nxp.rc
 odm/etc/libnfc-nci.conf
 odm/lib64/libpnscr2_aidl.so
 odm/lib64/nfc_nci.nqx.default.hw.so
