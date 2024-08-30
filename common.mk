@@ -353,6 +353,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element-V1-ndk.vendor \
     android.hardware.secure_element@1.0.vendor \
     com.android.nfc_extras \
+    android.hardware.nfc-V1-ndk.vendor \
     Tag
 
 PRODUCT_COPY_FILES += \
