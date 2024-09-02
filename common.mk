@@ -192,6 +192,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# DisplayConfig
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display_id_4630946450791512195.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946450791512195.xml \
+    $(LOCAL_PATH)/configs/display_id_4630946614210407555.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946614210407555.xml \
+    $(LOCAL_PATH)/configs/display_id_4630946994637926275.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946994637926275.xml
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
