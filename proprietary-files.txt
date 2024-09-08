@@ -1627,6 +1627,8 @@ odm/lib64/liboplus_spat_audiox.so
 odm/lib64/liboppo_audiox.so
 odm/lib64/libormshalclient.so
 odm/lib64/libportrait_repair_ppl3_ocl.so
+odm/lib64/libpwirisfeature.so
+odm/lib64/libpwirishalwrapper.so
 odm/lib64/libqsee_keybox_ca.so
 odm/lib64/libqti-radio-service.so
 odm/lib64/libqti-subsys-service.so
@@ -1983,6 +1985,9 @@ vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpp_manager.so
 vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
+vendor/lib64/libpwirishal.so
+vendor/lib64/libpwirishalwrapper.so
+vendor/lib64/libpwirisfeature.so
 vendor/lib64/libhistogram.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
@@ -2220,9 +2225,20 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # Fingerprint
+-framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar
+-system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
+odm/lib64/android.hardware.biometrics.common-V1-ndk.so
+odm/lib64/android.hardware.biometrics.common-V2-ndk.so
+odm/lib64/android.hardware.biometrics.fingerprint-V1-ndk.so
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
+vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00
