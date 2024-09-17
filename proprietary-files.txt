@@ -1652,7 +1652,6 @@ odm/lib64/libsubsys-service.so
 odm/lib64/libsubsys-utils.so
 odm/lib64/libtrace.so
 odm/lib64/libuahcore.so
-odm/lib64/liburcccore.so
 odm/lib64/libzlib.so
 odm/lib64/ls_nq_client.so
 odm/lib64/se_nq_extn_client.so
@@ -2223,7 +2222,7 @@ vendor/lib64/libfastcvdsp_stub.so
 
 # Fingerprint
 -framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar
--system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
@@ -2665,8 +2664,6 @@ vendor/etc/hal_uuid_map_config.xml
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
-odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk.so
 
 # OPLUS Performance
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
@@ -2693,7 +2690,6 @@ vendor/lib64/libperipheral_client.so
 
 # Performance
 odm/lib64/liboplus-uah-client.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.perf2-hal-service
 vendor/bin/poweropt-service
@@ -3486,3 +3482,12 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Urcc service
+odm/bin/hw/vendor.oplus.hardware.urcc-service
+odm/etc/init/vendor.oplus.hardware.urcc-service.rc
+odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
+odm/lib64/liburcccore.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
+system_ext/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
+system_ext/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
