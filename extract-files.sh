@@ -90,6 +90,10 @@ function blob_fixup() {
         vendor/bin/hw/vendor.qti.hardware.display.composer-service|vendor/lib64/libcwb_qcom_aidl.so|odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
+        vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "setsockopt: 1" "${2}" || echo "setsockopt: 1" >> "${2}"
+            ;;
     esac
 }
 
