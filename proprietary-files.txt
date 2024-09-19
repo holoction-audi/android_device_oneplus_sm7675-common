@@ -3201,6 +3201,22 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touch
+odm/bin/touchDaemon
+odm/bin/touchHidlTest
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service
+odm/etc/init/init.touchDaemon.rc
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
+odm/etc/vintf/manifest/manifest_touch_aidl.xml
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
+odm/bin/hw/vendor.oplus.hardware.urcc-service
+odm/etc/init/vendor.oplus.hardware.urcc-service.rc
+odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
+odm/lib64/liboplus-uah-client.so
+odm/lib64/liburcccore.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
+
 # Trusted Execution Environment connector
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
