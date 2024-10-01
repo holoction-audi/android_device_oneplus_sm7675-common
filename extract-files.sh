@@ -152,6 +152,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcodec2_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcodec2_shim.so" "${2}"
             ;;
+        vendor/lib64/libqcrilNr.so|vendor/lib64/libril-db.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s|persist.vendor.radio.poweron_opt|persist.vendor.radio.poweron_ign|" "${2}"
+            ;;
         vendor/lib64/vendor.libdpmframework.so)
             [ "$2" = "" ] && return 0
             grep -q "libhidlbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
