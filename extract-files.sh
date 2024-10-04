@@ -70,6 +70,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.secure_element-V1-ndk.so" "android.hardware.secure_element-V1-ndk_odm.so" "${2}"
             ;;
+        odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|odm/bin/hw/vendor-oplus-hardware-touch-V2-service|odm/bin/touchDaemon|odm/bin/touchHidlTest)
+            [ "$2" = "" ] && return 0
+            sed -i "s/\/default/\/oplus\x00\x00/" "${2}"
+            ;;
         odm/etc/camera/CameraHWConfiguration.config)
             [ "$2" = "" ] && return 0
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
@@ -81,6 +85,14 @@ function blob_fixup() {
         odm/etc/permissions/vendor-oplus-hardware-charger.xml)
             [ "$2" = "" ] && return 0
             sed -i "s|/system/system_ext|/system_ext|g" "${2}"
+            ;;
+        odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc|odm/etc/vintf/manifest/manifest_touch_aidl.xml)
+            [ "$2" = "" ] && return 0
+            sed -i "s/IOplusTouch\/default/IOplusTouch\/oplus/" "${2}"
+            ;;
+        odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml)
+            [ "$2" = "" ] && return 0
+            sed -i "s/IFingerprint\/default/IFingerprint\/oplus/" "${2}"
             ;;
         odm/lib64/libAlgoProcess.so)
             [ "$2" = "" ] && return 0
