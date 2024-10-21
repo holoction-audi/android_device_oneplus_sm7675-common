@@ -77,11 +77,9 @@ on early-init
   # Change ownership of sysfs power control node
     chown system graphics /sys/class/drm/card0/device/power/control
 
-    #Disable UFS clock scaling
+    #Disable UFS LPM to save boot time
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
-    #Disable UFS auto_hibern8
     write /sys/bus/platform/devices/1d84000.ufshc/auto_hibern8 0
-    #Disable UFS clock gating
     write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 0
 
     chown root system /dev/kmsg
@@ -502,11 +500,9 @@ on property:persist.vendor.sys.rawdump_copy=0
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
-    #Enable UFS clock scaling back
+    #Enable UFS LPM back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
-    #Enable UFS auto_hibern8 back
     write /sys/bus/platform/devices/1d84000.ufshc/auto_hibern8 5000
-    #Enable UFS clock gating back
     write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
@@ -868,6 +864,10 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     group nfc
 
 on charger
+    #Enable UFS LPM back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
+    write /sys/bus/platform/devices/1d84000.ufshc/auto_hibern8 5000
+    write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 1
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
 
