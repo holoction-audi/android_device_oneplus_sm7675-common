@@ -2641,6 +2641,8 @@ odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
 odm/etc/nfc/libnfc-mtp-SN220.conf_22877:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
 odm/etc/libnfc-nci.conf
+odm/lib/libsn220u_fw.so:vendor/lib64/libsn100u_fw.so
+odm/lib64/nfc_nci.nqx.default.hw.so
 odm/lib64/libpnscr2_aidl.so
 odm/lib64/libjc_keymint_nxp.so
 odm/lib64/libjc_keymint_transport_nxp.so
