@@ -3195,6 +3195,7 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 
 # Widevine DRM
+vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/etc/oplus_Widevine_licenses.pfm
 vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 
