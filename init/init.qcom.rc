@@ -27,7 +27,7 @@
 # Changes from Qualcomm Innovation Center are provided under the following
 # license:
 #
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted (subject to the limitations in the
@@ -75,7 +75,10 @@ on early-init
     symlink /vendor/dsp /dsp
 
   # Change ownership of sysfs power control node
-    chown system graphics /sys/class/drm/card0/device/power/control
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/power/control
+    chown system graphics /sys/devices/platform/soc/a800000.qcom,mdss_mdp/power/control
+    chmod 664 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/power/control
+    chmod 664 /sys/devices/platform/soc/a800000.qcom,mdss_mdp/power/control
 
     #Disable UFS LPM to save boot time
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
