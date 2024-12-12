@@ -626,8 +626,8 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Metadata logging init - comment if unneeded
-$(foreach f,$(wildcard $(LOCAL_PATH)/sysinit/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
+#$(foreach f,$(wildcard $(LOCAL_PATH)/sysinit/*.rc),\
+#        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm7675-common/sm7675-common-vendor.mk)
