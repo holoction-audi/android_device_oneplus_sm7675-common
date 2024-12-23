@@ -27,6 +27,10 @@
     <!-- If device supports pickup/lift gesture -->
     <bool name="config_dozePulsePickup">true</bool>
 
+    <!-- Delay in ms before invoking single tap gesture
+         Should be set to dt2w max time / 2 when needed -->
+    <integer name="config_singleTapDelay">250</integer>
+
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oem_charger_path">/sys/class/oplus_chg/battery/fast_charge</string>
 </resources>
