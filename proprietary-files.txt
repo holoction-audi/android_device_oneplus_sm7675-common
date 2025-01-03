@@ -2,8 +2,12 @@
 ## are from OnePlus Ace 3v (ColorOS 14.0.1.630 A40).
 
 # ACDBs
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/cliffs_cdp_cliffs7/CDP_cliffs7_acdb_cal.acdb
+vendor/etc/acdbdata/cliffs_cdp_cliffs7/CDP_cliffs7_workspaceFileXml.qwsp
+vendor/etc/acdbdata/cliffs_mtp_wcd9395_cliffs7/MTP_cliffs7_wcd9395_acdb_cal.acdb
+vendor/etc/acdbdata/cliffs_mtp_wcd9395_cliffs7/MTP_cliffs7_wcd9395_workspaceFileXml.qwsp
+vendor/etc/acdbdata/cliffs_mtp_wsa883x_cliffs7/MTP_cliffs7_acdb_cal.acdb
+vendor/etc/acdbdata/cliffs_mtp_wsa883x_cliffs7/MTP_cliffs7_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
@@ -25,7 +29,6 @@ vendor/etc/acdbdata/haptics_data/thud.pcm
 vendor/etc/acdbdata/haptics_data/tick.pcm
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
@@ -105,59 +108,8 @@ vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so
 vendor/lib/rfsa/adsp/nearby.napp_header
 vendor/lib/rfsa/adsp/nearby.so
 vendor/lib/rfs/dsp/libnsp_ipc_cdsp_skel.so
-vendor/lib64/bm3b68v04s12n52.bin
 vendor/lib64/bm3b68v04s12n53.bin
-vendor/lib64/bm3b73v04s12n02.bin
-vendor/lib64/bm3b73v04s12n03.bin
-vendor/lib64/bm3b73v04s12n04.bin
-vendor/lib64/bm3b73v04s12n06.bin
-vendor/lib64/bm3b73v04s12n07.bin
-vendor/lib64/bm3b73v04s12n12.bin
-vendor/lib64/bm3b73v04s12n13.bin
-vendor/lib64/bm3b73v04s12n14.bin
-vendor/lib64/bm3b73v04s12n15.bin
-vendor/lib64/bm3b73v04s12n16.bin
-vendor/lib64/bm3b73v04s12n17.bin
-vendor/lib64/bm3b73v04s12n18.bin
-vendor/lib64/bm3b73v04s12n19.bin
-vendor/lib64/bm3b73v04s12n20.bin
-vendor/lib64/bm3b73v04s12n21.bin
-vendor/lib64/bm3b73v04s12n22.bin
-vendor/lib64/bm3b73v04s12n23.bin
-vendor/lib64/bm3b73v04s12n24.bin
-vendor/lib64/bm3b73v04s12n25.bin
-vendor/lib64/bm3b73v04s12n26.bin
-vendor/lib64/bm3b73v04s12n27.bin
-vendor/lib64/bm3b73v04s12n28.bin
-vendor/lib64/bm3b73v04s12n29.bin
-vendor/lib64/bm3b73v04s12n30.bin
-vendor/lib64/bm3b73v04s12n35.bin
-vendor/lib64/bm3b73v04s12n36.bin
-vendor/lib64/bm3b73v04s12n37.bin
-vendor/lib64/bm3b73v04s12n38.bin
-vendor/lib64/bm3b73v04s12n39.bin
-vendor/lib64/bm3b73v04s12n40.bin
-vendor/lib64/bm3b73v04s12n43.bin
-vendor/lib64/bm3b73v04s12n44.bin
-vendor/lib64/bm3b73v04s12n45.bin
-vendor/lib64/bm3b73v04s12n46.bin
-vendor/lib64/bm3b73v04s12n47.bin
-vendor/lib64/bm3b73v04s12n48.bin
-vendor/lib64/bm3b73v04s12n49.bin
 vendor/lib64/bm3b73v04s12n50.bin
-vendor/lib64/bm3b73v04s12n51.bin
-vendor/lib64/bm3b73v04s12n54.bin
-vendor/lib64/bm3b73v04s12n55.bin
-vendor/lib64/bm3b73v04s12n56.bin
-vendor/lib64/bm3b73v04s12n57.bin
-vendor/lib64/bm3b73v04s12n58.bin
-vendor/lib64/bm3b73v04s12n59.bin
-vendor/lib64/bm3b73v04s12n60.bin
-vendor/lib64/bm3b73v04s12n61.bin
-vendor/lib64/bm3b73v04s12n62.bin
-vendor/lib64/bm3b73v04s12n65.bin
-vendor/lib64/bm3b73v04s12n66.bin
-vendor/lib64/bm3b73v04s12n67.bin
 vendor/lib64/bm4a68v08s12n52.bin
 vendor/lib64/bm4a68v08s12n53.bin
 vendor/lib64/bm4a73v08s12n02.bin
@@ -1390,9 +1342,12 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigsecure.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/camera/imx480_3.pb
 vendor/lib64/camera/imx615_3.pb
 vendor/lib64/camera/imx709_3.pb
 vendor/lib64/camera/imx809_3.pb
+vendor/lib64/camera/s5k3p9_2.pb
+vendor/lib64/camera/s5k3p9_3.pb
 vendor/lib64/camx.device-impl.so
 vendor/lib64/camx.provider-impl.so
 vendor/lib64/com.qti.camx.chiiqutils.so
@@ -1456,13 +1411,13 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchifeature2.so
 vendor/lib64/libchilog.so
+vendor/lib64/libcolor-default.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcommonchiutils.so
 vendor/lib64/libdepthcomputation.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libeepromcutter.so
-vendor/lib64/libfastcrc.so
 vendor/lib64/libfeutils.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_stub.so
@@ -1561,6 +1516,10 @@ vendor/lib64/libFace3DTA.so
 vendor/lib64/libFace3D_hlos.so
 vendor/lib64/libOmxCore.so
 vendor/lib64/libQ6MSFR_manager_stub.so
+vendor/lib64/libGCore4Cell_32E2.so
+vendor/lib64/libhwcsensor.so
+vendor/lib64/libjni_aidenoiserutilv2.so
+vendor/lib64/libjni_imageutil.so
 vendor/lib64/libRGBC.so
 vendor/lib64/libSensorsInterface.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
@@ -1569,7 +1528,6 @@ vendor/lib64/libbase64.so
 vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libface3d_dev.so
 vendor/lib64/libiccprofile.so
-vendor/lib64/libloadtrusteduiapp.so
 vendor/lib64/libmiracast.so
 vendor/lib64/libmm-omxcore.so
 vendor/lib64/libnative-api.so
@@ -1898,7 +1856,9 @@ vendor/lib64/libnspdescriptorhandler.so
 vendor/lib64/libnspdiag.so
 vendor/lib64/libnspextensionloader.so
 vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkutility.so
+vendor/lib64/libnspframeworkcore.so
+vendor/lib64/libnspframeworkcoreutility.so
+vendor/lib64/libnspsuperresolutionserviceextension.so
 vendor/lib64/libnspgraphing.so
 vendor/lib64/libnspipc.so
 vendor/lib64/libnsposal.so
@@ -1963,6 +1923,8 @@ vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
 vendor/lib64/libPanelChaplin.so
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
@@ -2000,7 +1962,7 @@ vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
-lib64/vendor.pixelworks.hardware.display-V1-ndk.so
+lib64/vendor.pixelworks.hardware.display-V2-ndk.so
 lib64/vendor.pixelworks.hardware.display@1.2.so
 lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
 lib64/vendor.pixelworks.hardware.feature@1.1.so
@@ -2067,20 +2029,14 @@ vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_w
 vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_AA553_P_7_A0001_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_AC090_P_3_A0005_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_P_3_AB714_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_P_7_AB715_dsc_cmd_mode_panel.json
+vendor/etc/display/DPU1020.xml
+vendor/etc/display/qdcm_calib_data_Dual_dsi_csot_nt36532_video_mode_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_evt_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_high_pre_dsc_cmd_mode_panel.json
 vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
@@ -2097,16 +2053,22 @@ vendor/etc/display/thermallevel_to_fps.xml
 vendor/etc/ltm_config_AA545_P_3_A0005_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_AA553_P_7_A0001_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_AC090_P_3_A0005_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_AA567_P_3_A0004_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_AA577_P_3_A0020_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_AA584_P_7_A0001_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_P_3_AB714_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_P_3_AB781_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_P_7_AB715_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_evt_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_high_pre_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_pvt_bd_dsc_cmd_mode_panel.xml
 
 # Display configs
 vendor/etc/displayconfig/display_id_4630946450791512195.xml
 vendor/etc/displayconfig/display_id_4630946614210407555.xml
 vendor/etc/displayconfig/display_id_4630946994637926275.xml
+vendor/etc/displayconfig/display_id_4630947039571902850.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
@@ -2278,6 +2240,7 @@ vendor/firmware/gen71100_gmu.bin
 vendor/firmware/gen71100_sqe.fw
 vendor/firmware/gen71100_zap.mbn
 vendor/firmware/gmu_gen70900.bin
+vendor/firmware/qps615_fw.bin
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
@@ -2358,7 +2321,7 @@ vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libwifiobserver.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss-V5-ndk.so
+vendor/lib64/vendor.qti.gnss-V6-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
 
 # HDCP
@@ -2368,6 +2331,12 @@ vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
+
+# HEXLP
+vendor/bin/hexlpservice
+vendor/etc/init/hexlpservice.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.hexlp-service.xml
+vendor/lib64/vendor.qti.hardware.hexlp-V1-ndk.so
 
 # Hotword Enrollment - avalon
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
@@ -2784,6 +2753,12 @@ vendor/etc/init/vendor.qti.qspa-service.rc
 vendor/etc/vintf/manifest/vendor.qti.qspa-service.xml
 vendor/lib64/vendor.qti.hardware.qspa-V1-ndk.so
 
+# QSPM
+vendor/lib64/libqspm-mem-utils-vendor.so
+vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+vendor/lib64/vendor.qti.qspmhal-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0.so
+
 # QVR
 vendor/bin/hw/qvrservice
 vendor/bin/qvrdatalogger
@@ -2826,7 +2801,6 @@ odm/lib64/libcommcenterutils.so
 odm/lib64/libdmtp-protos-lite.so
 odm/lib64/libdmtp.so
 odm/lib64/libdmtpclient.so
-odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk;NODEXPO
 system_ext/etc/permissions/qcrilhook.xml
@@ -3027,8 +3001,6 @@ vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libqcbor.so
 
 # Secure element
-vendor/bin/hw/android.hardware.secure_element-service.qti
-vendor/etc/init/android.hardware.secure_element-service.qti.rc
 vendor/etc/vintf/manifest/android.hardware.secure_element.xml
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPQeSE.so
@@ -3076,7 +3048,6 @@ vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
 vendor/lib64/libcwb_client_vendor.so
-vendor/lib64/libqsh.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_api.so
@@ -3132,6 +3103,9 @@ vendor/etc/sensors/config/qsh_camera_imx688_6.json
 vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json
 vendor/etc/sensors/config/qsh_camera_imx709_3.json
 vendor/etc/sensors/config/qsh_camera_imx809_3.json
+vendor/etc/sensors/config/qsh_camera_imx480_3.json
+vendor/etc/sensors/config/qsh_camera_s5k3p9_2.json
+vendor/etc/sensors/config/qsh_camera_s5k3p9_3.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
 vendor/etc/sensors/config/sns_aont.json
@@ -3225,11 +3199,9 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Trusted User Interface
-vendor/lib64/libTrustedUIAIDL.so
 vendor/lib64/libcpion.so
 vendor/lib64/libsi.so
 vendor/lib64/libtrustedapploader.so
-vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
 
 # UFS
 odm/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin
@@ -3254,7 +3226,6 @@ vendor/lib64/libvibratorutils.so
 
 # Video
 vendor/lib64/libstreamparser.so
-vendor/lib64/libstreamprocessor.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/libvideoutils.so
 
@@ -3269,13 +3240,16 @@ vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # VPU firmware
+vendor/firmware/vpu20_2v.mbn
+vendor/firmware/vpu20_2v_unsigned.mbn
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v_unsigned.mbn
 vendor/firmware/vpu30_2v.mbn
 vendor/firmware/vpu30_2v_unsigned.mbn
 vendor/firmware/vpu33_4v.mbn
@@ -3381,3 +3355,15 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# xrcomm
+vendor/bin/hw/xrcommservice
+vendor/lib64/libxrcommcoreutils.so
+vendor/lib64/libxrcommdiscoveryservice.so
+vendor/lib64/libxrcommdiscoveryservice_client.so
+vendor/lib64/libxrcommnetworkservice.so
+vendor/lib64/libxrcommnetworkservice_client.so
+vendor/lib64/libxrcommservice_client.so
+vendor/lib64/libxrcommtimerservice.so
+vendor/lib64/libxrcommtimerservice_client.so
+vendor/lib64/libxrcommwpacliwrapper.so
