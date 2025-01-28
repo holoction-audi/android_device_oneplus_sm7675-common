@@ -1272,6 +1272,7 @@ odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
+system_ext/framework/androidx.camera.extensions.impl.jar
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
