@@ -9,6 +9,9 @@ subsystem adf
 
 # Camera
 /dev/explorer_preisp                           0660    cameraserver    camera
+/sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-01/c42d000.qcom,spmi:qcom,pm8550@1:qcom,flash_led@ee00/leds/led:torch_0 brightness 0660 cameraserver camera
+/sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-01/c42d000.qcom,spmi:qcom,pm8550@1:qcom,flash_led@ee00/leds/led:torch_1 brightness 0660 cameraserver camera
+/sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-01/c42d000.qcom,spmi:qcom,pm8550@1:qcom,flash_led@ee00/leds/led:switch_2 brightness 0660 cameraserver camera
 
 # Charger
 /sys/class/oplus_chg/*  mmi_charging_enable    0660    system  system
