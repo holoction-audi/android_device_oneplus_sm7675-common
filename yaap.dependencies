@@ -14,5 +14,9 @@
   {
     "repository": "kernel_oneplus_sm7675-modules",
     "target_path": "kernel/oneplus/sm7675-modules"
+  },
+  {
+    "repository": "packages_apps_TouchGestures",
+    "target_path": "packages/apps/TouchGestures"
   }
 ]

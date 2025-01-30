@@ -28,7 +28,7 @@ const int TouchscreenGesture::kSupportedGestures = makeBitField(
         kGestureUpVee, kGestureDownVee, kGestureLeftVee, kGestureRightVee,
         kGestureCircle, kGestureDoubleSwipe,
         kGestureLeftToRight, kGestureRightToLeft, kGestureUpToDown, kGestureDownToUp,
-        kGestureM, kGestureW, kGestureSingleTap);
+        kGestureM, kGestureW, kGestureSingleTap, kGestureDoubleTap);
 
 }  // namespace implementation
 }  // namespace V1_0
