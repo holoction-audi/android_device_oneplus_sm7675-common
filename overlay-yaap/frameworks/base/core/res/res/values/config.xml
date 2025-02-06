@@ -26,9 +26,6 @@
         <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
 
-    <!-- If device supports pickup/lift gesture -->
-    <bool name="config_dozePulsePickup">true</bool>
-
     <!-- Delay in ms before invoking single tap gesture
          Should be set to dt2w max time / 2 when needed -->
     <integer name="config_singleTapDelay">250</integer>
