@@ -150,6 +150,29 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Dexopt
+PRODUCT_SYSTEM_PROPERTIES += \
+    pm.dexopt.post-boot=speed \
+    pm.dexopt.first-boot=speed \
+    pm.dexopt.boot-after-ota=speed-profile \
+    pm.dexopt.boot-after-mainline-update=speed \
+    pm.dexopt.install=speed-profile \
+    pm.dexopt.install-fast=speed \
+    pm.dexopt.install-bulk=speed-profile \
+    pm.dexopt.install-bulk-secondary=speed \
+    pm.dexopt.install-bulk-downgraded=speed \
+    pm.dexopt.install-bulk-secondary-downgraded=speed \
+    pm.dexopt.bg-dexopt=speed-profile \
+    pm.dexopt.ab-ota=speed-profile \
+    pm.dexopt.inactive=speed \
+    pm.dexopt.cmdline=speed \
+    pm.dexopt.first-use=speed-profile \
+    pm.dexopt.secondary=speed-profile \
+    pm.dexopt.shared=speed
+
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+OVERRIDE_DISABLE_DEXOPT_ALL := false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
