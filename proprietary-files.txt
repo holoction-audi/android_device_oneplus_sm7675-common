@@ -64,8 +64,8 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so
-odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so
+#odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so
+#odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so
 odm/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so
 odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
@@ -79,13 +79,13 @@ odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
 odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
 odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
-odm/lib/rfsa/adsp/libktvdrc.so
+#odm/lib/rfsa/adsp/libktvdrc.so
 odm/lib/rfsa/adsp/libktveffect.so
-odm/lib/rfsa/adsp/libktveq.so
-odm/lib/rfsa/adsp/libktvns.so
-odm/lib/rfsa/adsp/libktvpitchshift.so
-odm/lib/rfsa/adsp/libktvreverb.so
-odm/lib/rfsa/adsp/libktvvolume.so
+#odm/lib/rfsa/adsp/libktveq.so
+#odm/lib/rfsa/adsp/libktvns.so
+#odm/lib/rfsa/adsp/libktvpitchshift.so
+#odm/lib/rfsa/adsp/libktvreverb.so
+#odm/lib/rfsa/adsp/libktvvolume.so
 odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so
 odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so
 odm/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so
@@ -1580,7 +1580,7 @@ odm/lib64/liboemcrypto.so
 odm/lib64/libofm.so
 odm/lib64/liboplus_spat_audiox.so
 odm/lib64/liboppo_audiox.so
-odm/lib64/libormshalclient.so
+#odm/lib64/libormshalclient.so
 odm/lib64/libportrait_repair_ppl3_ocl.so
 odm/lib64/libpwirisfeature.so
 odm/lib64/libpwirishalwrapper.so
@@ -1962,7 +1962,6 @@ vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
-lib64/vendor.pixelworks.hardware.display-V2-ndk.so
 lib64/vendor.pixelworks.hardware.display@1.2.so
 lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
 lib64/vendor.pixelworks.hardware.feature@1.1.so
@@ -1974,7 +1973,8 @@ odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 system_ext/lib64/vendor.pixelworks.hardware.display@1.0.so
 system_ext/lib64/vendor.pixelworks.hardware.display@1.1.so
 system_ext/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.display-V1-ndk.so
+#vendor/lib64/vendor.pixelworks.hardware.display-V1-ndk.so
+vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
@@ -2575,10 +2575,10 @@ vendor/lib64/MLPD_5.pickle
 vendor/etc/public.libraries.txt
 
 # Neural networks
-odm/lib64/aiboost/libQnnHtp.so
-odm/lib64/aiboost/libQnnHtpPrepare.so
-odm/lib64/aiboost/libQnnHtpV75Stub.so
-odm/lib64/aiboost/libQnnSystem.so
+#odm/lib64/aiboost/libQnnHtp.so
+#odm/lib64/aiboost/libQnnHtpPrepare.so
+#odm/lib64/aiboost/libQnnHtpV75Stub.so
+#odm/lib64/aiboost/libQnnSystem.so
 odm/lib64/libQnnCpu.so
 odm/lib64/libQnnGpu.so
 odm/lib64/libQnnHtp.so
@@ -2590,10 +2590,10 @@ odm/lib64/libQnnSystem.so
 odm/lib64/libaiboost.so
 odm/lib64/libaiboost_qnn_external_delegate.so
 odm/lib64/libaiboost_qnn_external_delegate_te.so
-odm/lib64/libaiboost_qnn_sr.so
-odm/lib64/libaiboost_sr.so
+#odm/lib64/libaiboost_qnn_sr.so
+#odm/lib64/libaiboost_sr.so
 odm/lib64/libaiboost_te.so
-odm/lib64/libaiboost_ubwc.so
+#odm/lib64/libaiboost_ubwc.so
 odm/lib64/libapsultrahdr.so
 odm/lib64/libarc.ion.so
 
@@ -2610,7 +2610,7 @@ odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
 odm/etc/nfc/libnfc-mtp-SN220.conf_22877:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
 odm/etc/libnfc-nci.conf
-odm/lib/libsn220u_fw.so:vendor/lib64/libsn100u_fw.so
+#odm/lib/libsn220u_fw.so:vendor/lib64/libsn100u_fw.so
 odm/lib64/nfc_nci.nqx.default.hw.so
 odm/lib64/libpnscr2_aidl.so
 odm/lib64/libjc_keymint_nxp.so
@@ -2633,7 +2633,7 @@ odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
 odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
-odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so
+#odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so
 vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so
 
 # PD
@@ -2919,7 +2919,7 @@ vendor/lib64/qtiPeripheralMgr.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
+#vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
 vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
 vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
