@@ -13,7 +13,6 @@
     </hal>
     <hal format="aidl">
         <name>vendor.oplus.hardware.ims</name>
-        <version>1</version>
         <interface>
             <name>IImsStable</name>
             <instance>OplusImsRadio0</instance>

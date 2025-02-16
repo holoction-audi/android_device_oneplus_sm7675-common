@@ -1,10 +1,12 @@
 # Audio
 ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=9
+ro.oplus.image.my_engineering.type=release
 ro.vendor.qti.va_odm.support=1
+sys.oplus_ftm_mode=997
 
 # Bluetooth
-persist.vendor.bluetooth.modem_nv_support=true
+persist.bluetooth.oplus.export.nv_overwrite_region=true
 
 # Camera
 ro.hardware.camera=oemlayer
@@ -25,8 +27,8 @@ vendor.display.force_tonemapping=1
 # Radio
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.poweron_opt=1
-persist.vendor.radio.stack_id_0=0
-persist.vendor.radio.stack_id_1=1
+persist.vendor.radio.virtualcomm=1
+persist.vendor.radio.wait_for_pbm=0
 ro.sys.reserve.integrate=true
 ro.vendor.oplus.radio.project=1
 ro.vendor.oplus.radio.sar_regionmark=FCC
