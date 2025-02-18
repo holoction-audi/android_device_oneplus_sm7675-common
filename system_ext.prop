@@ -37,6 +37,7 @@ persist.data.df.agg.dl_size=4096
 persist.vendor.data.mode=concurrent
 
 # Radio
+persist.radio.hvolte.enable=1
 ril.subscription.types=NV,RUIM
 
 # Sensors
