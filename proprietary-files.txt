@@ -151,31 +151,31 @@ vendor/lib64/bm4a73v08s12n59.bin
 vendor/lib64/bm4a73v08s12n60.bin
 vendor/lib64/bm4a73v08s12n61.bin
 vendor/lib64/bm4a73v08s12n62.bin
-vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so
-vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
-vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
-vendor/lib64/rfs/dsp/libapn_dsp_skel.so
-vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so
-vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so
-vendor/lib64/rfs/dsp/libdpp_engine_skel.so
-vendor/lib64/rfs/dsp/libdspCV_skel.so
-vendor/lib64/rfs/dsp/libevadsp.so
-vendor/lib64/rfs/dsp/libfastcvadsp.so
-vendor/lib64/rfs/dsp/libfastcvdsp_skel.so
-vendor/lib64/rfs/dsp/libhdr_skel.so
-vendor/lib64/rfs/dsp/libhme_dsp_skel.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
+vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so:vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so
+vendor/lib64/rfs/dsp/libVppAisQnnHtp.so:vendor/lib/rfsa/adsp/libVppAisQnnHtp.so;SYMLINK=vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
+vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so:vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so;SYMLINK=vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
+vendor/lib64/rfs/dsp/libapn_dsp_skel.so:vendor/lib/rfsa/adsp/libapn_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libapn_dsp_skel.so
+vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so:vendor/lib/rfsa/adsp/libbitml_nsp_73nb_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so
+vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so:vendor/lib/rfsa/adsp/libbitml_nsp_75na_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so
+vendor/lib64/rfs/dsp/libdpp_engine_skel.so:vendor/lib/rfsa/adsp/libdpp_engine_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libdpp_engine_skel.so
+vendor/lib64/rfs/dsp/libdspCV_skel.so:vendor/lib/rfsa/adsp/libdspCV_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libdspCV_skel.so
+vendor/lib64/rfs/dsp/libevadsp.so:vendor/lib/rfsa/adsp/libevadsp.so;SYMLINK=vendor/lib64/rfs/dsp/libevadsp.so
+vendor/lib64/rfs/dsp/libfastcvadsp.so:vendor/lib/rfsa/adsp/libfastcvadsp.so;SYMLINK=vendor/lib64/rfs/dsp/libfastcvadsp.so
+vendor/lib64/rfs/dsp/libfastcvdsp_skel.so:vendor/lib/rfsa/adsp/libfastcvdsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libfastcvdsp_skel.so
+vendor/lib64/rfs/dsp/libhdr_skel.so:vendor/lib/rfsa/adsp/libhdr_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libhdr_skel.so
+vendor/lib64/rfs/dsp/libhme_dsp_skel.so:vendor/lib/rfsa/adsp/libhme_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libhme_dsp_skel.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so:vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so;SYMLINK=vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so:vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
 vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so:vendor/lib/rfsa/adsp/libnsp_ipc_cdsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
-vendor/lib64/rfs/dsp/libosie_skel.so
-vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
-vendor/lib64/rfs/dsp/libscveT2T_skel.so
-vendor/lib64/rfs/dsp/libvpp_ais.so
-vendor/lib64/rfs/dsp/libvpp_ais_networks.so
-vendor/lib64/rfs/dsp/libvpp_frc.so
-vendor/lib64/rfs/dsp/libvpp_svc_skel.so
-vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
-vendor/lib64/rfs/dsp/libworker_pool.so
+vendor/lib64/rfs/dsp/libosie_skel.so:vendor/lib/rfsa/adsp/libosie_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libosie_skel.so
+vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so:vendor/lib/rfsa/adsp/libqsegnetengine_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
+vendor/lib64/rfs/dsp/libscveT2T_skel.so:vendor/lib/rfsa/adsp/libscveT2T_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libscveT2T_skel.so
+vendor/lib64/rfs/dsp/libvpp_ais.so:vendor/lib/rfsa/adsp/libvpp_ais.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_ais.so
+vendor/lib64/rfs/dsp/libvpp_ais_networks.so:vendor/lib/rfsa/adsp/libvpp_ais_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_ais_networks.so
+vendor/lib64/rfs/dsp/libvpp_frc.so:vendor/lib/rfsa/adsp/libvpp_frc.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_frc.so
+vendor/lib64/rfs/dsp/libvpp_svc_skel.so:vendor/lib/rfsa/adsp/libvpp_svc_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_svc_skel.so
+vendor/lib64/rfs/dsp/libvpp_vqa_networks.so:vendor/lib/rfsa/adsp/libvpp_vqa_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
+vendor/lib64/rfs/dsp/libworker_pool.so:vendor/lib/rfsa/adsp/libworker_pool.so;SYMLINK=vendor/lib64/rfs/dsp/libworker_pool.so
 
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
@@ -1509,7 +1509,6 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libnanopb.so
-vendor/lib64/libolc_vnd.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
@@ -2130,10 +2129,10 @@ vendor/lib64/libfastcvopt.so
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml
-odm/lib64/libclstc_fod_color.so
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
+vendor/lib64/libolc_vnd.so;MODULE_SUFFIX=_vendor
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00
