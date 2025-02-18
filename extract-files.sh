@@ -117,6 +117,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/android.media.audio.common.types-V2-cpp.so/android.media.audio.common.types-V4-cpp.so/" "${2}"
             ;;
+        vendor/bin/system_dlkm_modprobe.sh)
+            [ "$2" = "" ] && return 0
+            sed "/zram or zsmalloc/d" "${2}"
+            sed "s/-e \"zram\" -e \"zsmalloc\"//g" "${2}"
+            ;;
         vendor/etc/init/vendor.qti.camera.provider-service_64.rc)
             sed -i "6i\    setenv JE_MALLOC_ZERO_FILLING 1" "${2}"
             [ "$2" = "" ] && return 0
