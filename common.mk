@@ -334,7 +334,20 @@ SPAMMY_LOG_TAGS := \
     synaLib \
     CwbService \
     occe_create \
-    DisplayModeController
+    DisplayModeController \
+    ForegroundUtils \
+    BaseDepthController \
+    GraphicsEnvironment \
+    Diag_Lib \
+    AGM \
+    AHAL \
+    MediaStrategy \
+    PAL_ResourceManager \
+    CCodec \
+    CCodecBuffers \
+    CCodecConfig \
+    Codec2Client \
+    COMU
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
