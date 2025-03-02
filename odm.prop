@@ -18,15 +18,11 @@ ro.camera.notify_nfc=1
 # Display
 persist.vendor.display.pxlw.iris_feature=0x417f0780
 ro.vendor.display.sensortype=2
-vendor.display.force_lm_to_fb_config=1
-vendor.display.aspect_ratio_threshold=20
-vendor.display.enable_fb_scaling=1
-vendor.display.scaling_source_opt_mode=4
-vendor.display.scaling_dest_opt_mode=4
-vendor.display.use_layer_ext=1
-vendor.display.force_tonemapping=1
-vendor.display.disable_spec_fence=1
+vendor.display.enable_rc_support=0
+vendor.display.enable_rounded_corner=0
 vendor.display.disable_noise_layer=1
+vendor.display.force_dv_support=1
+vendor.display.force_tonemapping=1
 
 # Radio
 persist.vendor.radio.force_on_dc=true
