@@ -216,8 +216,7 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     disabled
     oneshot
 
-on property:sys.boot_completed=1
-
+on property:vendor.post_boot.parsed=1
     # Uclamp tunings
 
     setprop kernel.sched_util_clamp_min_rt_default 500
