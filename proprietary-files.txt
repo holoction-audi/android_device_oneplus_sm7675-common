@@ -2288,22 +2288,11 @@ my_product/framework/com.android.hotwordenrollment.common.util.jar:product/frame
 my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;NODEXPO|e9b05d287c6ffec0567c1fb23041948bd898a496
 my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;NODEXPO|d117e974a77fb96f6c90150ed51d1e8fc9ef8ea3
 
-# IMS(SYSTEM) - pinned from LA.QSSI.15.0.r1-10500-qssi.0
+# IMS(SYSTEM) - pinned from LA.QSSI.15.0.r1-14000-qssi.0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d155e1ba9b6b6b215eec7d70004cba6b6176e5
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3|4bde619dc1436503a0a4555a7a11b8eabcfb449d
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|99b679504b1eba6fd311bd5610beec6988d34cfb
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
-system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
-system_ext/lib64/lib-imsvt.so|e1c75edf645be4017f63a4e92c67e92c3422b942
-system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
-system_ext/lib64/lib-imsvtutils.so|57e53dc5e1b4b35e0abefc4ef54e81e3e6523fb8
-system_ext/lib64/libdiag_system.so|7109fb099b110c59bd59fbb7180d1f2eef0f299a
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|ffda0b8f5af6212e645a50f454bdc44f69712fba
-system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
-system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
 -system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO|8a421431e6dcdadf281a55861c7256e24f6e223c
 -system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|15781e2856f4da51f548f43de9d3af58c9f49df1
 -system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|3641e287eaeb8fb936a16cdf260f09719bf0f5d4
@@ -2320,7 +2309,18 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|40bd25d668607efb933fecd6265940d89f21057b
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|04f0b4c1ce0bd7ef2fe2153289f5a752c7c1c7cf
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|26388f7cd876286822e536bb76b1277ef1dc76fa
--system_ext/priv-app/ims/ims.apk;NODEXPO|724e435ffa83f01bb8c841d0e45e3a772742c91b
+-system_ext/priv-app/ims/ims.apk;NODEXPO|f2e80743a0dea58cd3efcd99028447b148a37409
+-system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
+-system_ext/lib64/lib-imsvt.so|1dab15145f91c5937d9fbdc1f45b39eef2844bd4
+-system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
+-system_ext/lib64/lib-imsvtutils.so|8a1e06e3edf157b3cba2e608daf70ff0afa823d4
+-system_ext/lib64/libdiag_system.so|3bdfa77e63c8b6854f114f5c406be6dffe307c44
+-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
+-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
+-system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
+-system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
+-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
+-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
 
 # IMS(VENDOR)
 vendor/bin/ims-dataservice-daemon
