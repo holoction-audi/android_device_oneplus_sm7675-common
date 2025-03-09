@@ -88,8 +88,8 @@ function blob_fixup() {
             ;;
         odm/lib64/libAlgoProcess.so)
             [ "$2" = "" ] && return 0
-            sed -i "s/android.hardware.graphics.common-V3-ndk.so/android.hardware.graphics.common-V5-ndk.so/" "${2}"
-            sed -i "s/android.hardware.graphics.common-V4-ndk.so/android.hardware.graphics.common-V5-ndk.so/" "${2}"
+            sed -i "s/android.hardware.graphics.common-V3-ndk.so/android.hardware.graphics.common-V6-ndk.so/" "${2}"
+            sed -i "s/android.hardware.graphics.common-V4-ndk.so/android.hardware.graphics.common-V6-ndk.so/" "${2}"
             ;;
         odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libCS.so|odm/lib64/libSuperRaw.so|odm/lib64/libYTCommon.so|odm/lib64/libyuv2.so)
             [ "$2" = "" ] && return 0
