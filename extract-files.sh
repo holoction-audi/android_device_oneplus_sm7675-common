@@ -100,6 +100,11 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "camera.device@3.2-impl.so" "camera.device@3.2-impl_odm.so" "${2}"
             "${PATCHELF}" --replace-needed "camera.device@3.3-impl.so" "camera.device@3.3-impl_odm.so" "${2}"
             ;;
+        odm/bin/hw/vendor-oplus-hardware-performance-V1-service)
+            [ "$2" = "" ] && return 0
+            grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
+            ;;
         odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so|vendor/lib64/libcwb_qcom_aidl.so)
             [ "$2" = "" ] && return 0
             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
