@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oplus.rc \
     init.kernel.post_boot.sh \
+    init.kernel.post_boot-cliffs.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
