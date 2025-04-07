@@ -113,6 +113,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
+        system_ext/bin/wfdservice64)
+            [ "$2" = "" ] && return 0
+            grep -q "libwfdservice_shim.so" "${2}" || "${PATCHELF}" --add-needed "libwfdservice_shim.so" "${2}"
+            ;;
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
