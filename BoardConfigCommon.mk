@@ -73,7 +73,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Camera
-TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
+TARGET_CAMERA_PACKAGE_NAME := com.oplus.camera
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
