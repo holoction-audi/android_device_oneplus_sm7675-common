@@ -5,6 +5,11 @@ ro.oplus.image.my_engineering.type=release
 ro.vendor.qti.va_odm.support=1
 sys.oplus_ftm_mode=997
 
+# Camera
+oplus.camera.packname=com.oplus.camera
+oplus.camera.activityname=com.oplus.camera
+ro.oplus.system.camera.name=com.oplus.camera
+
 # Bluetooth
 persist.bluetooth.oplus.export.nv_overwrite_region=true
 
