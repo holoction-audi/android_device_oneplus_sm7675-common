@@ -2309,18 +2309,18 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c761
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|40bd25d668607efb933fecd6265940d89f21057b
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|04f0b4c1ce0bd7ef2fe2153289f5a752c7c1c7cf
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|26388f7cd876286822e536bb76b1277ef1dc76fa
--system_ext/priv-app/ims/ims.apk;NODEXPO|f2e80743a0dea58cd3efcd99028447b148a37409
 -system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
--system_ext/lib64/lib-imsvt.so|1dab15145f91c5937d9fbdc1f45b39eef2844bd4
+-system_ext/lib64/lib-imsvt.so|32fd182fe087a297395f1d6e1d90587a9b97d7c1
 -system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
 -system_ext/lib64/lib-imsvtutils.so|8a1e06e3edf157b3cba2e608daf70ff0afa823d4
--system_ext/lib64/libdiag_system.so|3bdfa77e63c8b6854f114f5c406be6dffe307c44
+-system_ext/lib64/libdiag_system.so|e00fa91ebc18ddaa55b3de979a43e1f0648a13b6
 -system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
 -system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
 -system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
 -system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
+-system_ext/priv-app/ims/ims.apk;NODEXPO|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
 
 # IMS(VENDOR)
 vendor/bin/ims-dataservice-daemon
