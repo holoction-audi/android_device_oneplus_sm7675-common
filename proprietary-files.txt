@@ -196,14 +196,12 @@ odm/vendor/firmware/antdtx.mdt
 odm/lib64/lib_lvacfs.so
 odm/lib64/liblvacfs_wrapper.so
 odm/lib64/libtfa98xx.so
-vendor/bin/qsap_voiceui
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 vendor/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim
 vendor/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim
-vendor/etc/seccomp_policy/qsap_voiceui.policy
 vendor/lib64/hw/audio.primary.pineapple.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
@@ -236,8 +234,6 @@ vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so
-vendor/lib64/libvui_dmgr.so
-vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libvui_intf.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
@@ -2057,11 +2053,6 @@ vendor/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 
-# DCF
-vendor/lib64/libDcfHalFramework.so
-vendor/lib64/libDcfHalLogger.so
-vendor/lib64/libDcfHalQtiMutex.so
-
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
@@ -2764,10 +2755,8 @@ vendor/etc/O_TDD-Bypass_platform_license.pfm
 vendor/etc/SDA_platform_license.pfm
 vendor/etc/SNS_platform_license.pfm
 vendor/etc/SNS_platform_license_for_SM7675.pfm
-vendor/etc/permissions/vendor.qti.dcf.xml
 vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/qms.rc
-vendor/etc/init/dcfd.rc
 vendor/etc/init/dlsc.rc
 vendor/etc/init/nicmd.rc
 vendor/etc/qcril_database/qcrilNr.db
