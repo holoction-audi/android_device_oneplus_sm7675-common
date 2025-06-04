@@ -1999,12 +1999,6 @@ vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_evt_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_high_pre_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_pvt_bd_dsc_cmd_mode_panel.xml
 
-# Display configs
-vendor/etc/displayconfig/display_id_4630946450791512195.xml
-vendor/etc/displayconfig/display_id_4630946614210407555.xml
-vendor/etc/displayconfig/display_id_4630946994637926275.xml
-vendor/etc/displayconfig/display_id_4630947039571902850.xml
-
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
 vendor/bin/ppd

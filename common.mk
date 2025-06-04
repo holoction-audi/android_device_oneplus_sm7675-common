@@ -193,9 +193,7 @@ PRODUCT_COPY_FILES += \
 
 # DisplayConfig
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display_id_4630946450791512195.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946450791512195.xml \
-    $(LOCAL_PATH)/configs/display_id_4630946614210407555.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946614210407555.xml \
-    $(LOCAL_PATH)/configs/display_id_4630946994637926275.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946994637926275.xml
+    $(LOCAL_PATH)/configs/display_id_4630946450791512195.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946450791512195.xml
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -475,6 +473,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-V2-ndk.vendor \
     android.hardware.sensors-service.oplus-multihal \
     libdumpstateutil.vendor \
+    android.frameworks.sensorservice@1.0 \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal \
     sensors.oplus
