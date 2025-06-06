@@ -2542,7 +2542,8 @@ odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/lib64/vendor.oplus.hardware.charger-V6-ndk.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
 system_ext/framework/vendor.oplus.hardware.charger-V1-java.jar
-system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar
+system_ext/framework/vendor.oplus.hardware.charger-V7-java.jar
+system_ext/lib64/vendor.oplus.hardware.charger-V7-ndk.so
 
 # OPLUS Charger firmware
 odm/firmware/fastchg/23803/charging_hyper_mode_config.txt
