@@ -1850,6 +1850,7 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
 
 # Diag
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
