@@ -2,7 +2,6 @@ aw8697.ko
 boot_mode.ko
 buildvariant.ko
 cdt_integrity.ko
-gunyah_qcom.ko
 haptic_feedback.ko
 haptic.ko
 horae_shell_temp.ko
@@ -19,7 +18,6 @@ oplus_bsp_dfr_shutdown_speed.ko
 oplus_bsp_fw_update.ko
 oplus_bsp_ist_down.ko
 oplus_bsp_ist_up.ko
-oplus_bsp_mm_osvelte.ko
 oplus_bsp_mxm_down.ko
 oplus_bsp_mxm_up.ko
 oplus_bsp_synaptics_tcm2.ko
@@ -30,6 +28,7 @@ oplus_bsp_tp_ft3518.ko
 oplus_bsp_tp_ft3658u_spi.ko
 oplus_bsp_tp_ft3681.ko
 oplus_bsp_tp_ft3683g.ko
+oplus_bsp_tp_ft8057p.ko
 oplus_bsp_tp_goodix_comnon.ko
 oplus_bsp_tp_gt9916.ko
 oplus_bsp_tp_gt9966.ko
@@ -53,8 +52,6 @@ oplus_ftm_mode.ko
 oplus_ipa_thermal.ko
 oplus_mdmfeature.ko
 oplus_mdmrst.ko
-oplus_mm_kevent_fb.ko
-oplus_mm_kevent.ko
 oplus_network_esim.ko
 oplus_network_oem_qmi.ko
 oplus_network_rf_cable_monitor.ko
@@ -73,9 +70,4 @@ oplus_trackpoint_report.ko
 oplus_uprobe.ko
 oplus_wireless_pen.ko 
 qbridge.ko
-qcom_logbuf_boot_log.ko
-qcom_logbuf_vendor_hooks.ko
-qcom_va_minidump.ko
-qpnp-power-on.ko
-qrtr-gunyah.ko
 test-kit.ko

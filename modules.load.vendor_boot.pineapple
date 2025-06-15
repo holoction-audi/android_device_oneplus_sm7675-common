@@ -29,6 +29,7 @@ gh_virt_wdt.ko
 gic_intr_routing.ko
 gpucc-pineapple.ko
 gunyah_loader.ko
+gunyah_qcom.ko
 hwkm.ko
 icc-bcm-voter.ko
 icc-debug.ko
@@ -44,6 +45,7 @@ minidump.ko
 msm_dma_iommu_mapping.ko
 msm_qmp.ko
 nvmem_qcom-spmi-sdam.ko
+nvmem_qfprom.ko
 phy-qcom-ufs.ko
 phy-qcom-ufs-qmp-v4-crow.ko
 phy-qcom-ufs-qmp-v4-pineapple.ko
@@ -59,6 +61,7 @@ qcom_cpucp.ko
 qcom-cpufreq-hw.ko
 qcom_cpu_vendor_hooks.ko
 qcom-dcvs.ko
+qcom-dload-mode.ko
 qcom_dma_heaps.ko
 qcom_hwspinlock.ko
 qcom-i2c-pmic.ko
@@ -66,6 +69,8 @@ qcom_iommu_util.ko
 qcom-ipcc.ko
 qcom_ipc_logging.ko
 qcom_llcc_pmu.ko
+qcom_logbuf_boot_log.ko
+qcom_logbuf_vendor_hooks.ko
 qcom-pdc.ko
 qcom-pmu-lib.ko
 qcom-reboot-reason.ko
@@ -75,16 +80,18 @@ qcom_scmi_vendor.ko
 qcom-scm.ko
 qcom-spmi-pmic.ko
 qcom_tsens.ko
+qcom_va_minidump.ko
 qcom_wdt_core.ko
 qnoc-cliffs.ko
 qnoc-pineapple.ko
 qnoc-qos.ko
 qnoc-volcano.ko
+qpnp-power-on.ko
+qrtr-gunyah.ko
 qrtr.ko
 qti-regmap-debugfs.ko
 rpmh-regulator.ko
 rtc-pm8xxx.ko
-sched-walt.ko
 sdhci-msm.ko
 secure_buffer.ko
 smem.ko

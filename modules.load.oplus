@@ -34,6 +34,7 @@ oplus_bsp_tp_ft3518.ko
 oplus_bsp_tp_ft3658u_spi.ko
 oplus_bsp_tp_ft3681.ko
 oplus_bsp_tp_ft3683g.ko
+oplus_bsp_tp_ft8057p.ko
 oplus_bsp_tp_goodix_comnon.ko
 oplus_bsp_tp_gt9916.ko
 oplus_bsp_tp_gt9966.ko
@@ -54,8 +55,6 @@ oplus_camera_aw37004.ko
 oplus_chg_v2.ko
 oplus_ipa_thermal.ko
 oplus_mdmrst.ko
-oplus_mm_kevent_fb.ko
-oplus_mm_kevent.ko
 oplus_network_esim.ko
 oplus_network_oem_qmi.ko
 oplus_network_rf_cable_monitor.ko
