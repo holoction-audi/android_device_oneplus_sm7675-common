@@ -9,7 +9,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -75,15 +74,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.oplus.hardware.performance-V1-ndk',
         'vendor.oplus.hardware.urcc-V1-ndk.so',
     ): lib_fixup_odm_suffix,
-    (
-        'libar-acdb',
-        'libar-gsl',
-        'liblx-osal',
-        'libats',
-        'libagmclient',
-        'libpalclient',
-        'vendor.qti.hardware.AGMIPC@1.0-impl',
-    ): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
