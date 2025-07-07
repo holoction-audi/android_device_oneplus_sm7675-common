@@ -3259,6 +3259,9 @@ odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
 
+# Vibrator
+odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
+
 # Video
 vendor/lib64/libstreamparser.so
 vendor/lib64/libvideooptfeature.so
