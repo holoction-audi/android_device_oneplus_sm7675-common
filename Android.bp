@@ -26,3 +26,10 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini",
     symlink_target: "/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+install_symlink {
+    name: "media_profiles_symlink",
+    vendor: true,
+    installed_location: "etc/media_profiles_cliffs_v1.xml",
+    symlink_target: "/odm/etc/camera/media_profiles.xml",
+}
