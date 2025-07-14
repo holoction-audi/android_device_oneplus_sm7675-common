@@ -2569,11 +2569,13 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Performance
+vendor/bin/hw/android.hardware.power-service
 vendor/bin/hw/pasrknob
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.perf2-hal-service
 vendor/bin/poweropt-service
 vendor/bin/qsap_qapeservice
+vendor/etc/init/android.hardware.power-service.rc
 vendor/etc/init/poweropt-service.rc
 vendor/etc/init/vendor.qsap.qapeservice.rc
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
@@ -2615,6 +2617,7 @@ vendor/etc/seccomp_policy/qsap_qapeservice.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
 vendor/etc/smomo_setting.xml
+vendor/lib64/hw/power.default.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libaodoptfeature.so
 vendor/lib64/libapengine.so
