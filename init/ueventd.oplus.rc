@@ -21,11 +21,9 @@ firmware_directories /mnt/vendor/persist/display/
 /dev/block/sdf2   0660   root     system
 /dev/block/bootdevice/by-name/oplusreserve3    0660    root    system
 /dev/block/sdf4   0660   root     system
-
 /dev/block/bootdevice/by-name/oplusreserve5    0660    root    system
 /dev/block/sdf5   0660   root     system
 /dev/block/sdf6   0660   root     system
-/dev/block/sdf5   0660   root     system
 
 # WiFi
-firmware_directories /mnt/vendor/persist/copy/ /odm/etc/wifi/ /mnt/vendor/persist/ /vendor/firmware_mnt/image/
+firmware_directories /mnt/vendor/persist/copy/ /odm/etc/wifi/ /mnt/vendor/persist/
