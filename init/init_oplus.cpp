@@ -27,8 +27,7 @@ constexpr std::string kCmdlineRegion = "oplus_region";
 const std::unordered_map<int, std::string> kRegionMap = {
         {27, "IN"},
         {68, "EU"},
-        {151, "CN"},
-        {161, "NA"},
+        {167, "ROW"},
 };
 }  // anonymous namespace
 
