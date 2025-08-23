@@ -2523,20 +2523,9 @@ vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_
 vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
 
 # OPLUS Performance
-odm/bin/hw/vendor-oplus-hardware-performance-V1-service
-odm/bin/hw/vendor.oplus.hardware.urcc-service
-odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
-odm/etc/init/vendor.oplus.hardware.urcc-service.rc
 odm/etc/uah/uahconfig.pb
-odm/etc/vintf/manifest/manifest_performance_aidl.xml
-odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
 odm/lib64/liboplus-uah-client.so
 odm/lib64/libuahcore.so
-odm/lib64/liburcccore.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so;MODULE_SUFFIX=_odm
-odm/lib64/vendor.oplus.hardware.performance-V2-ndk.so
-odm/lib64/vendor.oplus.hardware.performance-V3-ndk.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so;MODULE_SUFFIX=_odm
 
 # OPLUS Project
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
