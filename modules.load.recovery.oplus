@@ -18,6 +18,7 @@ oplus_bsp_dfr_shutdown_speed.ko
 oplus_bsp_fw_update.ko
 oplus_bsp_ist_down.ko
 oplus_bsp_ist_up.ko
+oplus_bsp_mm_osvelte.ko
 oplus_bsp_mxm_down.ko
 oplus_bsp_mxm_up.ko
 oplus_bsp_synaptics_tcm2.ko
@@ -50,9 +51,9 @@ oplus_charger_present.ko
 oplus_chg_v2.ko
 oplus_ftm_mode.ko
 oplus_ipa_thermal.ko
-oplus_mdmfeature.ko
 oplus_mdmrst.ko
-oplus_network_esim.ko
+oplus_mm_kevent_fb.ko
+oplus_mm_kevent.ko
 oplus_network_oem_qmi.ko
 oplus_network_rf_cable_monitor.ko
 oplus_network_sim_detect.ko

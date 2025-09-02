@@ -55,7 +55,8 @@ oplus_camera_aw37004.ko
 oplus_chg_v2.ko
 oplus_ipa_thermal.ko
 oplus_mdmrst.ko
-oplus_network_esim.ko
+oplus_mm_kevent_fb.ko
+oplus_mm_kevent.ko
 oplus_network_oem_qmi.ko
 oplus_network_rf_cable_monitor.ko
 oplus_network_sim_detect.ko

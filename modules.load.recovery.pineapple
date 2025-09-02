@@ -90,6 +90,7 @@ gunyah_qcom.ko
 hdcp_qseecom_dlkm.ko
 health_monitor.ko
 heap_mem_ext_v01.ko
+hung_task_enh.ko
 hvc_gunyah.ko
 hwkm.ko
 hwmon.ko
@@ -129,6 +130,7 @@ msm_hw_fence.ko
 msm_lmh_dcvs.ko
 msm_memshare.ko
 msm-mmrm.ko
+msm_performance.ko
 msm_qmp.ko
 msm_sharedmem.ko
 msm_show_epoch.ko
@@ -247,6 +249,7 @@ repeater-qti-pmic-eusb2.ko
 rpmh-regulator.ko
 rproc_qcom_common.ko
 rtc-pm8xxx.ko
+sched-walt.ko
 sdhci-msm.ko
 secure_buffer.ko
 sg.ko
