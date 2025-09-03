@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include vendor/gapps/arm64/arm64-vendor.mk
-include vendor/lineage-priv/keys/keys.mk
-
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -318,6 +315,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.qspa-service
 
+# QCOM
+TARGET_BOARD_PLATFORM := pineapple
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
@@ -352,8 +352,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/oplus \
-    hardware/qcom-caf/common/libqti-perfd-client \
-    vendor/gapps/arm64
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -392,7 +391,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
-$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
+#$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 
 # Thermal
 PRODUCT_PACKAGES += \
