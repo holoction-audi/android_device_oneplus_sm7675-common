@@ -455,9 +455,7 @@ DEVICE_MANIFEST_FILE := \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa.xml \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa_extn.xml \
     $(LOCAL_PATH)/manifest_cliffs.xml \
-    $(LOCAL_PATH)/network_manifest.xml \
-    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
-    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+    $(LOCAL_PATH)/network_manifest.xml
 
 
 ODM_MANIFEST_FILES := \
