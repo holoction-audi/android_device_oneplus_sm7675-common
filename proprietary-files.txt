@@ -220,16 +220,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
-odm/etc/camera/aigc/aigc_models/blurDet_sm7675.bin
-odm/etc/camera/aigc/aigc_models/faceSeg_sm7675.bin
-odm/etc/camera/aigc/aigc_models/gfpgan1024_sm7675.bin
-odm/etc/camera/aigc/aigc_models/noise300.bin
-odm/etc/camera/aigc/libs/libODNN.so
-odm/etc/camera/aigc/libs/libOPAlgoCamAIGCFace.so
-odm/etc/camera/aigc/libs/libQnnHtp.so
-odm/etc/camera/aigc/libs/libQnnHtpV73Stub.so
-odm/etc/camera/aigc/libs/libQnnSystem.so
-odm/etc/camera/aigc/libs/libzlib.so
+odm/etc/camera/CameraOemConfiguration.config
 odm/etc/camera/anc/fusion_model
 odm/etc/camera/anc/fusion_model_post
 odm/etc/camera/ancbokehseg/anc_cl_kernel.cache
@@ -1070,7 +1061,6 @@ odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
 odm/lib64/libOPAlgoCamAiBeautyEyeRetouchCn.so
 odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
 odm/lib64/libOPAlgoCamFaceBeautyCap.so
-odm/lib64/libOPAlgoCamGroupClassifier.so
 odm/lib64/libOPAlgoCamSinglePortrait.so
 odm/lib64/libOPLUS_SCPortrait.so;FIX_SONAME;DISABLE_CHECKELF
 odm/lib64/libOPLUSMotionDetection.so
@@ -1718,7 +1708,6 @@ vendor/etc/ssg/tz_whitelist.json
 
 # ConsumerIR
 my_product/del-app/ConsumerIRApp/ConsumerIRApp.apk:product/app/ConsumerIRApp/ConsumerIRApp.apk;PRESIGNED
-my_stock/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml:product/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml
 
 # Data (RIL)
 vendor/bin/ATFWD-daemon
@@ -1776,7 +1765,6 @@ vendor/etc/init/shsusrd.rc|22ff980a8daaf62fd091485541a4c8c10fdeb4a9
 
 # Diag
 system/lib64/vendor.qti.diaghal-V1-ndk.so
-system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
@@ -1897,7 +1885,7 @@ odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_Nature_pGC.txt
 odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
 odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_Vivid_pGC.txt
 odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_LsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txtF
+odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txt
 odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_EP3_100nits_pGC.txt
 odm/etc/PanelChaplin/AA553_P_7_A0001_dsc_cmd_mode_panel_2_2nit.odf
 odm/etc/PanelChaplin/AdjustValue
@@ -2275,7 +2263,7 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d1
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|99b679504b1eba6fd311bd5610beec6988d34cfb
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
--system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO|8a421431e6dcdadf281a55861c7256e24f6e223c
+-system_ext/app/ImsRcsService/ImsRcsService.apk|8a421431e6dcdadf281a55861c7256e24f6e223c
 -system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|15781e2856f4da51f548f43de9d3af58c9f49df1
 -system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|3641e287eaeb8fb936a16cdf260f09719bf0f5d4
 -system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar|598f05b21960d224dd36dce61638281aecc968b8
@@ -2302,7 +2290,7 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c761
 -system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
--system_ext/priv-app/ims/ims.apk;NODEXPO|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
+-system_ext/priv-app/ims/ims.apk|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
 
 # IMS(VENDOR) - pinned from Asus WW-35.1210.1420.124
 vendor/etc/init/ims-dataservice-daemon.rc|bf7f184c8975bd6af457d5b9ec544174bf09a2ab
@@ -2372,8 +2360,8 @@ vendor/lib64/libqtiidentitycredential.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-cliffs.sh
-vendor/bin/init.kernel.post_boot-cliffs_2_2_1.sh            
-vendor/bin/init.kernel.post_boot-cliffs_2_3_0.sh            
+vendor/bin/init.kernel.post_boot-cliffs_2_2_1.sh
+vendor/bin/init.kernel.post_boot-cliffs_2_3_0.sh
 vendor/bin/init.kernel.post_boot-cliffs_3_3_1.sh
 vendor/bin/init.kernel.post_boot-memory.sh
 vendor/bin/init.qcom.class_core.sh
@@ -2846,13 +2834,13 @@ vendor/etc/init/qms.rc|7dd69c1b874e71b9ebf6a57aa31b435876aea149
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy|99d93cdd565d634cff4a4f55fc42587c8ff48ae8
 vendor/etc/seccomp_policy/qms.policy|4fdedb680185a5695a9a94a368689fb3e67f2c20
 vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
--product/app/uimgbaservice/uimgbaservice.apk;NODEXPO|544e61c56e3ebd6119ad20d9f104b0549c7de170
+-product/app/uimgbaservice/uimgbaservice.apk|544e61c56e3ebd6119ad20d9f104b0549c7de170
 -product/framework/uimgbalibrary.jar|7f3901cbbf91a5e20e1e1921f5f0cb30ee0562fc
 -product/framework/uimgbamanagerlibrary.jar|cb372891980e4b8cf9c915d4083585c8819356f1
 -product/framework/uimservicelibrary.jar|640673acc7af1496c0d2d4763d007a4f7ea7c6cb
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk;NODEXPO|8a00d7a1ee53965628c7516823199563751523bd
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|8a00d7a1ee53965628c7516823199563751523bd
 -system_ext/framework/qcrilhook.jar|3362f1ac0f2db40e8aaa9fd2fa402b8c00201b6b
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk;NODEXPO|306deeddff059cfbcd50b27bceb10153001fc145
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|306deeddff059cfbcd50b27bceb10153001fc145
 -vendor/bin/hw/qcrilNrd|d517d3009ab1a1dade06fd4921e60dd8add32129
 -vendor/bin/ks|8b3ef949c0ed510d1bf8a3aa205b2fb28028a9a5
 -vendor/bin/nicmd|d929012d80c9af404b0d0f5d44546056036000af
