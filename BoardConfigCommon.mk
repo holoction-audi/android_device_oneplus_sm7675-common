@@ -112,7 +112,6 @@ BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.hypervisor.protected_vm.supported=true \
     androidboot.memcg=1 \
-    androidboot.selinux=permissive \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.console=0
 
@@ -248,8 +247,8 @@ BOOT_SECURITY_PATCH := 2025-05-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
