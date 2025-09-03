@@ -1761,6 +1761,7 @@ vendor/etc/init/shsusrd.rc|22ff980a8daaf62fd091485541a4c8c10fdeb4a9
 -vendor/lib64/libnspextensionloader.so|2e408fd4d4f0d411564ea51a14aaed8d608d8bab
 -vendor/lib64/libnspframework.so|29b78fcc5b96c6cd952d5ee5166f19622e5b2967
 -vendor/lib64/libnspframeworkutility.so|afe6f6c90bc722c38f800063968e501608e113e1
+-vendor/lib64/libnspframeworkcoreutility.so
 -vendor/lib64/libnspgraphing.so|49c919b06b7b49977fe6c25e46540a261c6ea860
 -vendor/lib64/libnspipc.so|52d825373d6f207eb3ab52b79afbf5ba194de49f
 -vendor/lib64/libnsposal.so|ff6c35b337398f66dccb4dec195f4298758e48f8
@@ -2098,26 +2099,6 @@ odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
 vendor/lib64/libolc_vnd.so;MODULE_SUFFIX=_vendor
-
-# Fingerprint Pay
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
-odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
-odm/lib64/libifaa_factory.so
-odm/lib64/librpmbengclient.so
-odm/lib64/libsecurity_event_dcs_vnd.so
-
-# Fingerprint Pay firmware
-odm/vendor/firmware/alipay.b00
-odm/vendor/firmware/alipay.b01
-odm/vendor/firmware/alipay.b02
-odm/vendor/firmware/alipay.b03
-odm/vendor/firmware/alipay.b04
-odm/vendor/firmware/alipay.b05
-odm/vendor/firmware/alipay.b06
-odm/vendor/firmware/alipay.b07
-odm/vendor/firmware/alipay.b08
-odm/vendor/firmware/alipay.mdt
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
@@ -2689,6 +2670,12 @@ vendor/etc/init/vendor.qti.hardware.alarm-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml
 vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so
 vendor/lib64/vendor.qti.hardware.alarm-V1-ndk.so
+
+# Protobuf
+odm/lib64/libprotobuf-cpp-full-3.9.1.so|4dd57aae47686a373b4cea0a5e40c071461f2e20
+odm/lib64/libprotobuf-cpp-lite-3.9.1.so|2228faedd0aa72667e497908e753ba9333cf3bda
+vendor/lib64/libprotobuf-cpp-full-21.7.so|9e37044386f19631a56f13eac55af62c03c1eca8
+vendor/lib64/libprotobuf-cpp-lite-21.7.so|dfd0149122e2c6f790a79f116d00318f2e921b13
 
 # QCC
 system_ext/app/QCC/QCC.apk
