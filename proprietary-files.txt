@@ -1761,7 +1761,7 @@ vendor/etc/init/shsusrd.rc|22ff980a8daaf62fd091485541a4c8c10fdeb4a9
 -vendor/lib64/libnspextensionloader.so|2e408fd4d4f0d411564ea51a14aaed8d608d8bab
 -vendor/lib64/libnspframework.so|29b78fcc5b96c6cd952d5ee5166f19622e5b2967
 -vendor/lib64/libnspframeworkutility.so|afe6f6c90bc722c38f800063968e501608e113e1
--vendor/lib64/libnspframeworkcoreutility.so
+-vendor/lib64/libnspframeworkcoreutility.so|3c54658f3f5de6c779de53fdeb9d5fa47cf8f93c
 -vendor/lib64/libnspgraphing.so|49c919b06b7b49977fe6c25e46540a261c6ea860
 -vendor/lib64/libnspipc.so|52d825373d6f207eb3ab52b79afbf5ba194de49f
 -vendor/lib64/libnsposal.so|ff6c35b337398f66dccb4dec195f4298758e48f8
@@ -2250,7 +2250,7 @@ my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-ap
 
 # IMS(SYSTEM) - pinned from LA.QSSI.15.0.r1-16100-qssi.0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d155e1ba9b6b6b215eec7d70004cba6b6176e5
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|4bde619dc1436503a0a4555a7a11b8eabcfb449d
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|99b679504b1eba6fd311bd5610beec6988d34cfb
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
 -system_ext/app/ImsRcsService/ImsRcsService.apk|8a421431e6dcdadf281a55861c7256e24f6e223c
@@ -2269,18 +2269,18 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c761
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|40bd25d668607efb933fecd6265940d89f21057b
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|04f0b4c1ce0bd7ef2fe2153289f5a752c7c1c7cf
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|26388f7cd876286822e536bb76b1277ef1dc76fa
--system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
--system_ext/lib64/lib-imsvt.so|32fd182fe087a297395f1d6e1d90587a9b97d7c1
+-system_ext/lib64/lib-imsvideocodec.so|5de2ce5a0cd2de94a7861f03d07411aec91ab738
+-system_ext/lib64/lib-imsvt.so|8c89327d563e7769997f5d0e3748130c103dc4b9
 -system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
 -system_ext/lib64/lib-imsvtutils.so|8a1e06e3edf157b3cba2e608daf70ff0afa823d4
--system_ext/lib64/libdiag_system.so|e00fa91ebc18ddaa55b3de979a43e1f0648a13b6
+-system_ext/lib64/libdiag_system.so|3bf9bcd950b540ddd10dd6b3ff14af328eeb449d
 -system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
 -system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
 -system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
 -system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
--system_ext/priv-app/ims/ims.apk|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
+-system_ext/priv-app/ims/ims.apk|6d3fa88eb5637eba8ff7c9ddc4a41a0b46eb2e03
 
 # IMS(VENDOR) - pinned from Asus WW-35.1210.1420.124
 vendor/etc/init/ims-dataservice-daemon.rc|bf7f184c8975bd6af457d5b9ec544174bf09a2ab
@@ -2292,7 +2292,7 @@ vendor/etc/seccomp_policy/imsrtp.policy|0c90904bee13fa759fa37e23c077b38e03531984
 -vendor/bin/imsdaemon|4326a7a1471fb6ee77f23c6ac7598089515cecc9
 -vendor/etc/vintf/manifest/ImsRtpService-aidl.xml|ae324d4306ce9399982e88391a67dc77727b0533
 -vendor/etc/vintf/manifest/imsdcservice-saidl.xml|cc7fb80856684495afec14a1ef6aeddbcaa0d563
--vendor/etc/vintf/manifest/vendor.qti.ims.factoryaidlservice.xml|71901fccdd81f2b674da39926e553fa7a3b2673c
+-vendor/etc/vintf/manifest/vendor.qti.ims.factoryaidlservice.xml|53d31ad95a3ebf39b761d7532170b958ce28a622
 -vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|660ff73d91c446a322c1cd996ed01209724ab23f
 -vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|79459b8c041443773aedd7f3fdfc8ce3e11dff93
 -vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|a7d511095ffeb18f9fcb16af55738abf1a38c723
@@ -2840,7 +2840,7 @@ vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
 -vendor/bin/hw/qcrilNrd|d517d3009ab1a1dade06fd4921e60dd8add32129
 -vendor/bin/ks|8b3ef949c0ed510d1bf8a3aa205b2fb28028a9a5
 -vendor/bin/nicmd|d929012d80c9af404b0d0f5d44546056036000af
--vendor/bin/qms;DISABLE_CHECKELF|50ad50d19f3f5a59d3e9552e5ba7f9e0e01c721c
+-vendor/bin/qms;DISABLE_CHECKELF|b04d796fa64d187821e1f5224f6d0a185ecdbf63|b04d796fa64d187821e1f5224f6d0a185ecdbf63
 -vendor/bin/qtigetprop|2237848e3c41ec66432602063ef0827e3efe21c0
 -vendor/bin/qtisetprop|04ae58c224cfb641b0939b7b24582e66d79cbaac
 -vendor/etc/vintf/manifest/android.hardware.radio.config.xml|aa4c5db79ae6816ad9efb60a7b40d5202004efb9
@@ -2851,7 +2851,7 @@ vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
 -vendor/lib64/libQtiRilLoadable.so|867ee06f0d4cf4c46a71e6aaac2353703af07190
 -vendor/lib64/liblqe.so|5dea93fd09e674473c89218eaf289bd3a2b322fe
 -vendor/lib64/libqcrilDataModule.so|7edda75fbc1aab1f5ac40b545df04c8235666254
--vendor/lib64/libqcrilNr.so|560dee5044c9e64b29ac0b341e1943f8be53f3b1
+-vendor/lib64/libqcrilNr.so|b9e05063377d92768f11eed076a9c6ab3338d476
 -vendor/lib64/libqcrilNrCellInfoModule.so|0ed563d8fb0b1f75fc9d8af8841461cb24439c82
 -vendor/lib64/libqcrilNrFramework.so|190cae132807fe86cf3a9081f566576ca67ccd9e
 -vendor/lib64/libqcrilNrImsModule.so|119ecbfc0a77d315384cbdba1ae00ffb8f278623
@@ -2867,8 +2867,8 @@ vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
 -vendor/lib64/libqcrildataqos.so|d0b384742fa49bde6a24fb1b70da2dad98e730ae
 -vendor/lib64/libqdpr.so|786c37688cb3ff4e5925fdd23f202444f205a50f
 -vendor/lib64/libqms.so|f6d3c024766705d1a782dc139f6074082b25bbfe
--vendor/lib64/libqms_client.so|454e3b687f889572d7293b375b7caad74a621250
--vendor/lib64/libril-db.so|fb8b1f87f1d91e67e05ed6200aedd80778e6ec79
+-vendor/lib64/libqms_client.so|5166bc7a5e6e4a3018bbf47373331800575c6bad|5166bc7a5e6e4a3018bbf47373331800575c6bad
+-vendor/lib64/libril-db.so|becc8d1d47cbdc63110d8d83bdefc1062a57d31c
 -vendor/lib64/libril-legacy.so|86ae46d28629df865be8aec5623c22403b797c7d
 -vendor/lib64/libril-qc-ltedirectdisc.so|a5bbba18df39ca36b55342dab9422fb62fd397fe
 -vendor/lib64/libril-qc-radioconfig.so|049eec8c913b61f715749c72d2a76b1af62c0c17
@@ -2891,7 +2891,7 @@ vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
 -vendor/lib64/qcrilNr_aidl_IRadioSim.so|331d757e746895a595c8ec1ec415345f8ff5be77
 -vendor/lib64/qcrilNr_aidl_IRadioVoice.so|0b817c44431436af7130c7c8e0a9a2d9de19e9ef
 -vendor/lib64/qcrilNr_aidl_IRadioNetwork.so|b8de887604eb7ccc62a3a1edb74a813e2275cb10
--vendor/lib64/qcrilNr_aidl_SecureElementService.so|b6e68361930f3408410febc3cdaf918e3b8f37d1
+-vendor/lib64/qcrilNr_aidl_SecureElementService.so|bf78c9e3a3b5296a88add762268b1c0d86781625|bf78c9e3a3b5296a88add762268b1c0d86781625
 -vendor/lib64/qcrilNr_aidl_UimLpaService.so|1e65f6fe21859d03380298df003949ac0d2c2e3d
 -vendor/lib64/qcrilNr_aidl_UimRemoteClient.so|d3c2387af640001564fbc6459998c40efb75edf5
 -vendor/lib64/qcrilNr_aidl_UimRemoteServer.so|126d77f57feac46a41aa3e644110f47c486e5505
@@ -3014,6 +3014,10 @@ vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
 # Secure element
+odm/bin/hw/android.hardware.secure_element-service.qti
+odm/etc/init/android.hardware.secure_element-service.qti.rc
+-odm/lib64/android.hardware.secure_element-V1-ndk.so:odm/lib64/android.hardware.secure_element-V1-ndk_odm.so;FIX_SONAME
+vendor/etc/vintf/manifest/android.hardware.secure_element.xml
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPQeSE.so
 vendor/lib64/libesesbprovision.so
