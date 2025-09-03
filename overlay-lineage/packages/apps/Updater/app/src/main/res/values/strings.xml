@@ -15,6 +15,4 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/kok-o3/ota_stuff/refs/heads/avalon/los-22/avalon.json</string>
-    <string name="menu_changelog_url" translatable="false">https://xdaforums.com/t/rom-beta-unofficial-lineageos-22-for-oneplus-nord-4.4746203/post-90160466</string>
 </resources>
