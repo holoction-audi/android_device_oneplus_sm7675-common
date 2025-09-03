@@ -202,7 +202,7 @@ vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 vendor/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim
 vendor/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim
-vendor/lib64/hw/audio.primary.pineapple.so
+vendor/lib64/hw/audio.primary.pineapple.so;DISABLE_CHECKELF
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so
@@ -210,12 +210,12 @@ vendor/lib64/libFlacSwDec.so
 vendor/lib64/libPeripheralStateUtils.so
 vendor/lib64/libVoiceSdk.so
 vendor/lib64/libadm.so
-vendor/lib64/libagm.so
+vendor/lib64/libagm.so;DISABLE_CHECKELF
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
-vendor/lib64/libarmemlog.so
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF;DISABLE_DEPS
+vendor/lib64/libarmemlog.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiofeaturestats.so
@@ -231,10 +231,10 @@ vendor/lib64/libhotword_intf.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
-vendor/lib64/libmcs.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so
-vendor/lib64/libvui_intf.so
+vendor/lib64/libvui_intf.so;DISABLE_CHECKELF
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
@@ -1585,10 +1585,8 @@ vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/libnative-api.so
 vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libqape_oem_ext.so
-vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
 vendor/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim
 vendor/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim
-vendor/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
 
 odm/lib64/jcos_nq_client.so
 odm/etc/init/init.camera_upate.rc
@@ -1601,8 +1599,6 @@ odm/lib64/libGaiaClient_vnd.so
 odm/lib64/libHDRDetection.so
 odm/lib64/libODNN.so
 odm/lib64/libOPLUSMotionDetection.so
-odm/lib64/libUpScale.so
-odm/lib64/libextendfile.so
 odm/lib64/libfido2_factory.so
 odm/lib64/libfido_factory.so
 odm/lib64/libifaa_factory.so
@@ -1615,7 +1611,6 @@ odm/lib64/libqti-radio-service.so
 odm/lib64/libqti-subsys-service.so
 odm/lib64/libradio-service.so
 odm/lib64/libradioapis.so
-odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib_s5k3p9.so;FIX_SONAME
 odm/lib64/libremosaiclib_s5kjn1.so;FIX_SONAME
 odm/lib64/libportrait_repair_ppl3_ocl.so
@@ -1629,7 +1624,6 @@ odm/lib64/libsecurity_event_dcs_vnd.so
 odm/lib64/libsubsys-service.so
 odm/lib64/libsubsys-utils.so
 odm/lib64/libtensorflowlite_oplus.so
-odm/lib64/libtfavib.so
 odm/lib64/libthirdcapability.so
 odm/lib64/libtrace.so
 odm/lib64/libzlib.so
@@ -1648,9 +1642,9 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # CNE
-vendor/app/CACertService/CACertService.apk;NODEXPO
-vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink;NODEXPO
-vendor/app/IWlanService/IWlanService.apk;NODEXPO
+vendor/app/CACertService/CACertService.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
@@ -2039,7 +2033,7 @@ vendor/etc/init/vendor.dpmd.rc|005aadea33bb148961bedc7a3e945141438a0f7d
 -system_ext/lib64/libdpmtcm.so|5521469cac3a2bec3da66cd36637df83ee59b97e
 -system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so|9e5c5ab7709c3fad6b20c22b39bb761088e363c7
 -system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so|de7501e60ba32563721022eb8ad0ca0230a7c03b
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk;NODEXPO|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
 -vendor/bin/dpmQmiMgr|0dbf3dacbdaecc9da33bbd6d336244ce5f3efa05
 -vendor/bin/vendor.dpmd|f2e4b5ed1a7e04f74ca5838c1a4bdebdb07feb10
 -vendor/etc/vintf/manifest/dpm-saidl.xml|bbc8a24ecdbe7cb31fb273cc9947555a232f5109
@@ -2275,15 +2269,15 @@ vendor/lib64/vendor.qti.hardware.hexlp-V1-ndk.so
 # Hotword Enrollment - avalon
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|9153e65b649fee516fce1dfd4fa175a3d57f24ab
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;NODEXPO|e9b05d287c6ffec0567c1fb23041948bd898a496
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;NODEXPO|d117e974a77fb96f6c90150ed51d1e8fc9ef8ea3
+my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|e9b05d287c6ffec0567c1fb23041948bd898a496
+my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|d117e974a77fb96f6c90150ed51d1e8fc9ef8ea3
 
 # IMS(SYSTEM) - pinned from LA.QSSI.15.0.r1-14000-qssi.0
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d155e1ba9b6b6b215eec7d70004cba6b6176e5
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c5c9dd633c3f5450f315017cd4645a11de3d7ed3
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|99b679504b1eba6fd311bd5610beec6988d34cfb
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
--system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO|8a421431e6dcdadf281a55861c7256e24f6e223c
+-system_ext/app/ImsRcsService/ImsRcsService.apk|8a421431e6dcdadf281a55861c7256e24f6e223c
 -system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|15781e2856f4da51f548f43de9d3af58c9f49df1
 -system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|3641e287eaeb8fb936a16cdf260f09719bf0f5d4
 -system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar|598f05b21960d224dd36dce61638281aecc968b8
@@ -2310,7 +2304,7 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c761
 -system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
--system_ext/priv-app/ims/ims.apk;NODEXPO|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
+-system_ext/priv-app/ims/ims.apk|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
 
 # IMS(VENDOR) - pinned from Lanai.LA.1.0.r1-00865-STD.PROD-3
 vendor/etc/init/ims-dataservice-daemon.rc|bf7f184c8975bd6af457d5b9ec544174bf09a2ab
@@ -2383,7 +2377,6 @@ vendor/bin/init.kernel.post_boot-pineapple.sh
 vendor/bin/init.kernel.post_boot-cliffs_2_2_1.sh
 vendor/bin/init.kernel.post_boot-cliffs_2_3_0.sh
 vendor/bin/init.kernel.post_boot-cliffs_3_3_1.sh
-vendor/bin/init.kernel.post_boot-cliffs_default_3_4_1.sh
 vendor/bin/init.qcom.class_core.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
@@ -2554,7 +2547,7 @@ odm/lib64/libdisplaycolorfeature.so
 odm/lib64/libdisplayfossfeature_nature.so
 odm/lib64/libdpaservice.so
 odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
-odm/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so;MODULE_SUFFIX=_odm
 vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
 vendor/lib64/libcwb_qcom_aidl.so
 vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so
@@ -2566,10 +2559,9 @@ vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so;MODULE_SUFFIX=_
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
 odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
 odm/etc/vintf/manifest/manifest_performance_aidl.xml
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.oplus.hardware.performance-V2-ndk.so
 odm/lib64/vendor.oplus.hardware.performance-V3-ndk.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
 
 # OPLUS Project
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
@@ -2603,7 +2595,7 @@ vendor/lib64/libprotobuf-cpp-full-21.7.so
 vendor/lib64/libprotobuf-cpp-lite-21.7.so
 
 # QCC
-system_ext/app/QCC/QCC.apk;NODEXPO
+system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
 system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
@@ -2619,7 +2611,6 @@ system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
-system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/seccomp_policy/qesdk.policy
@@ -2739,17 +2730,17 @@ vendor/etc/init/qms.rc|74f340dce1462e36998a2ef90f9f35c17a8b6a23
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy|99d93cdd565d634cff4a4f55fc42587c8ff48ae8
 vendor/etc/seccomp_policy/qms.policy|31efc61f15d23584fe264ff31b0c087a64ba8143
 vendor/etc/telephony_packages.xml|ab432af86b5dc56a988aa41275de3e8766cdcd13
--product/app/uimgbaservice/uimgbaservice.apk;NODEXPO|f78f2904b184e481c36ec430896fa5706927f15e
--product/app/uimremoteclient/uimremoteclient.apk;NODEXPO|489ddbd5435906818d0028c9d75158309b443847
--product/app/uimremoteserver/uimremoteserver.apk;NODEXPO|00dcc969226a98e466fb7b90495826fc7aa9a494
+-product/app/uimgbaservice/uimgbaservice.apk|f78f2904b184e481c36ec430896fa5706927f15e
+-product/app/uimremoteclient/uimremoteclient.apk|489ddbd5435906818d0028c9d75158309b443847
+-product/app/uimremoteserver/uimremoteserver.apk|00dcc969226a98e466fb7b90495826fc7aa9a494
 -product/framework/uimgbalibrary.jar|fead0945eb7ee074030ae8703cdcc5441f21688b
 -product/framework/uimgbamanagerlibrary.jar|a975d84c72d7d7facdadb54b69e57a8d495ec150
 -product/framework/uimremoteclientlibrary.jar|390be715e5456c0897d027855adac4db211554ed
 -product/framework/uimremoteserverlibrary.jar|48d3c61572e96b2d7e1534203cd8a732eb804e51
 -product/framework/uimservicelibrary.jar|f96553f87efa437cd31c508810e7fe1e168284cf
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk;NODEXPO|6649715fb5d956ca7e92a747dc6e73a24f3c025e
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|6649715fb5d956ca7e92a747dc6e73a24f3c025e
 -system_ext/framework/qcrilhook.jar|d9778a3f8da09bf25c4905fb4e5d0fd7310f1f42
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk;NODEXPO|0683bd5ee5b9d34da4a55fefa515d676c7f8f9a4
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0683bd5ee5b9d34da4a55fefa515d676c7f8f9a4
 -vendor/bin/hw/qcrilNrd|d517d3009ab1a1dade06fd4921e60dd8add32129
 -vendor/bin/ks|8b3ef949c0ed510d1bf8a3aa205b2fb28028a9a5
 -vendor/bin/nicmd|10fc98a98fd008517089399b410cf8efa8503ad8
@@ -3100,7 +3091,7 @@ vendor/etc/thermal-engine.conf
 -vendor/lib64/libthermalclient.so
 
 # Time services
-vendor/app/TimeService/TimeService.apk;NODEXPO
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
@@ -3229,7 +3220,7 @@ system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
-system_ext/priv-app/WfdService/WfdService.apk;NODEXPO
+system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
