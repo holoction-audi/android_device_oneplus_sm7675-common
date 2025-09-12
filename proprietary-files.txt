@@ -1715,9 +1715,6 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/etc/ssg/tz_whitelist.json
 
-# ConsumerIR
-my_product/del-app/ConsumerIRApp/ConsumerIRApp.apk:product/app/ConsumerIRApp/ConsumerIRApp.apk;PRESIGNED
-
 # Data (RIL)
 vendor/bin/ATFWD-daemon
 vendor/bin/embmsslServer
