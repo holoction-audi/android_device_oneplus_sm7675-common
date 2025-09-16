@@ -1820,19 +1820,21 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 # Display (Pixelworks)
 odm/lib64/libpwirisfeature.so
 odm/lib64/libpwirishalwrapper.so
+odm/lib64/vendor.pixelworks.hardware.display-V2-ndk.so
 odm/lib64/vendor.pixelworks.hardware.display@1.0.so
 odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.display@1.2.so
+odm/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 vendor/lib64/libpwirisfeature.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libpwirishal.so
 vendor/lib64/libpwirishalwrapper.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so
+vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.display@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.display@1.2.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
+vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so;MODULE_SUFFIX=_vendor
 
@@ -2229,7 +2231,6 @@ vendor/lib64/libmm-hdcpmgr.so
 # Horae
 system/lib64/libostatslog.so
 system/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
-system/lib64/vendor.oplus.hardware.performance-V1-ndk.so
 system_ext/bin/horae
 system_ext/etc/horae/horae.conf
 system_ext/etc/horae/horae_SM7675.conf
@@ -2873,7 +2874,7 @@ vendor/etc/telephony_packages.xml|74e46752734db56332d2dd79ee1a1d89cb5dd328
 -vendor/lib64/qcrilNr_aidl_IRadioSim.so|331d757e746895a595c8ec1ec415345f8ff5be77
 -vendor/lib64/qcrilNr_aidl_IRadioVoice.so|0b817c44431436af7130c7c8e0a9a2d9de19e9ef
 -vendor/lib64/qcrilNr_aidl_IRadioNetwork.so|b8de887604eb7ccc62a3a1edb74a813e2275cb10
--vendor/lib64/qcrilNr_aidl_SecureElementService.so|bf78c9e3a3b5296a88add762268b1c0d86781625|bf78c9e3a3b5296a88add762268b1c0d86781625
+-vendor/lib64/qcrilNr_aidl_SecureElementService.so|bf78c9e3a3b5296a88add762268b1c0d86781625|374c22830d9b0028345e9686feaa0bd53f2948ba
 -vendor/lib64/qcrilNr_aidl_UimLpaService.so|1e65f6fe21859d03380298df003949ac0d2c2e3d
 -vendor/lib64/qcrilNr_aidl_UimRemoteClient.so|d3c2387af640001564fbc6459998c40efb75edf5
 -vendor/lib64/qcrilNr_aidl_UimRemoteServer.so|126d77f57feac46a41aa3e644110f47c486e5505

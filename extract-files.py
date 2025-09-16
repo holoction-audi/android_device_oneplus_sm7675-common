@@ -94,8 +94,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('odm/bin/hw/android.hardware.secure_element-service.qti', 'vendor/lib64/qcrilNr_aidl_SecureElementService.so'): blob_fixup()
-        .replace_needed('android.hardware.secure_element-V1-ndk.so', 'android.hardware.secure_element-V1-ndk_odm.so'),
+    ('vendor/lib64/qcrilNr_aidl_SecureElementService.so'): blob_fixup()
+        .replace_needed('android.hardware.secure_element-V1-ndk_odm.so', 'android.hardware.secure_element-V1-ndk.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v3.oplus.so'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
@@ -130,6 +130,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/system_dlkm_modprobe.sh': blob_fixup()
         .regex_replace(r'.*\bzram or zsmalloc\b.*\n', '')
         .regex_replace(r'-e "zram" -e "zsmalloc"', ''),
+    ('vendor/bin/xtra-daemon', 'vendor/bin/qcc-vendor', 'vendor/bin/qms', 'vendor/lib64/libqcc_sdk.so', 'vendor/lib64/libcne.so', 'vendor/lib64/libqms_client.so'): blob_fixup()
+        .add_needed('libbinder_shim.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
@@ -141,6 +143,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
+        .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
