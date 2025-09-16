@@ -266,6 +266,8 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
+    android.hardware.secure_element-V1-ndk.vendor \
+    android.hardware.secure_element@1.0.vendor \
     com.android.nfc_extras \
     Tag
 
