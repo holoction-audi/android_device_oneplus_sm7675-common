@@ -345,9 +345,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 
+
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal \
+    android.frameworks.sensorservice-V1-ndk.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors-V2-ndk.vendor \
+    android.hardware.sensors-service.oplus-multihal \
+    libdumpstateutil.vendor \
+    libsensorndkbridge \
     sensors.dynamic_sensor_hal \
     sensors.oplus
 
@@ -367,6 +373,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.relative_humidity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.relative_humidity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
+
+# Sensors (wake)
+$(call soong_config_set,oplus_sensors,uses_tap_sensor,true)
+$(call soong_config_set,oplus_sensors,uses_double_tap_sensor,true)
 
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 34
