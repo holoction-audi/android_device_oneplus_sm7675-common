@@ -19,79 +19,85 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/sm7675-common',
-    'hardware/qcom-caf/sm8650',
-    'hardware/qcom-caf/wlan',
-    'hardware/oplus',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/dataservices',
+    "device/oneplus/sm7675-common",
+    "hardware/qcom-caf/sm8650",
+    "hardware/qcom-caf/wlan",
+    "hardware/oplus",
+    "vendor/qcom/opensource/commonsys/display",
+    "vendor/qcom/opensource/commonsys-intf/display",
+    "vendor/qcom/opensource/dataservices",
 ]
 
+
+def lib_fixup_all_suffixes(lib: str, partition: str, *args, **kwargs):
+    if partition == "odm":
+        return f"{lib}_odm"
+    if partition == "vendor":
+        return f"{lib}_vendor"
+    return lib
+
+
 def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'odm' else None
+    return f"{lib}_{partition}" if partition == "odm" else None
+
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
+    return f"{lib}_{partition}" if partition == "vendor" else None
+
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    ("vendor.oplus.hardware.displaypanelfeature-V1-ndk",): lib_fixup_all_suffixes,
     (
-        'com.qti.sensor.lyt808',
-        'com.qualcomm.qti.dpm.api@1.0',
-        'libarcsoft_triple_sat',
-        'libarcsoft_triple_zoomtranslator',
-        'libdualcam_optical_zoom_control',
-        'libdualcam_video_optical_zoom',
-        'libhwconfigurationutil',
-        'libolc_vnd',
-        'libpwirisfeature',
-        'libpwirishalwrapper',
-        'libtriplecam_optical_zoom_control',
-        'libtriplecam_video_optical_zoom',
-        'vendor.oplus.hardware.cammidasservice-V1-ndk',
-        'vendor.oplus.hardware.camera_rfi-V1-ndk',
-        'vendor.oplus.hardware.displaycolorfeature-V1-ndk',
-        'vendor.oplus.hardware.displaypanelfeature-V1-ndk',
-        'vendor.pixelworks.hardware.display@1.0',
-        'vendor.pixelworks.hardware.display@1.1',
-        'vendor.pixelworks.hardware.display@1.2',
-        'vendor.pixelworks.hardware.feature@1.0',
-        'vendor.pixelworks.hardware.feature@1.1',
-        'vendor.qti.ImsRtpService-V1-ndk',
-        'vendor.qti.diaghal@1.0',
-        'vendor.qti.hardware.dpmaidlservice-V1-ndk',
-        'vendor.qti.hardware.dpmservice@1.0',
-        'vendor.qti.hardware.qccsyshal@1.0',
-        'vendor.qti.hardware.qccsyshal@1.1',
-        'vendor.qti.hardware.qccsyshal@1.2',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
-        'vendor.qti.imsrtpservice@3.0',
-        'vendor.qti.imsrtpservice@3.1',
-        'vendor.qti.qccvndhal_aidl-V1-ndk',
+        "com.qti.sensor.lyt808",
+        "com.qualcomm.qti.dpm.api@1.0",
+        "libarcsoft_triple_sat",
+        "libarcsoft_triple_zoomtranslator",
+        "libdualcam_optical_zoom_control",
+        "libdualcam_video_optical_zoom",
+        "libhwconfigurationutil",
+        "libpwirisfeature",
+        "libpwirishalwrapper",
+        "libtriplecam_optical_zoom_control",
+        "libtriplecam_video_optical_zoom",
+        "vendor.oplus.hardware.cammidasservice-V1-ndk",
+        "vendor.oplus.hardware.camera_rfi-V1-ndk",
+        "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
+        "vendor.pixelworks.hardware.display@1.0",
+        "vendor.pixelworks.hardware.display@1.1",
+        "vendor.pixelworks.hardware.display@1.2",
+        "vendor.pixelworks.hardware.display-V2-ndk",
+        "vendor.pixelworks.hardware.feature-V1-ndk",
+        "vendor.pixelworks.hardware.feature@1.0",
+        "vendor.pixelworks.hardware.feature@1.1",
+        "vendor.qti.ImsRtpService-V1-ndk",
+        "vendor.qti.diaghal@1.0",
+        "vendor.qti.hardware.dpmaidlservice-V1-ndk",
+        "vendor.qti.hardware.dpmservice@1.0",
+        "vendor.qti.hardware.qccsyshal@1.0",
+        "vendor.qti.hardware.qccsyshal@1.1",
+        "vendor.qti.hardware.qccsyshal@1.2",
+        "vendor.qti.hardware.wifidisplaysession@1.0",
+        "vendor.qti.imsrtpservice@3.0",
+        "vendor.qti.imsrtpservice@3.1",
+        "vendor.qti.qccvndhal_aidl-V1-ndk",
     ): lib_fixup_vendor_suffix,
     (
-        'vendor.oplus.hardware.displaypanelfeature-V1-ndk',
-        'vendor.oplus.hardware.performance-V1-ndk',
-        'vendor.oplus.hardware.urcc-V1-ndk.so',
-    ): lib_fixup_odm_suffix,
-    (
-        'libar-acdb',
-        'libar-gsl',
-        'liblx-osal',
-        'libats',
-        'libagmclient',
-        'libpalclient',
-        'vendor.qti.hardware.AGMIPC@1.0-impl',
+        "libar-acdb",
+        "libar-gsl",
+        "liblx-osal",
+        "libats",
+        "libagmclient",
+        "libpalclient",
+        "vendor.qti.hardware.AGMIPC@1.0-impl",
     ): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('odm/bin/hw/android.hardware.secure_element-service.qti', 'vendor/lib64/qcrilNr_aidl_SecureElementService.so'): blob_fixup()
+        .replace_needed('android.hardware.secure_element-V1-ndk.so', 'android.hardware.secure_element-V1-ndk_odm.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v3.oplus.so'),
-    'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
-        .add_needed('libbase_shim.so')
-        .add_needed('libprocessgroup_shim.so'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
         .remove_needed('android.hardware.graphics.common-V4-ndk.so'),
@@ -124,33 +130,30 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/system_dlkm_modprobe.sh': blob_fixup()
         .regex_replace(r'.*\bzram or zsmalloc\b.*\n', '')
         .regex_replace(r'-e "zram" -e "zsmalloc"', ''),
-    ('vendor/bin/xtra-daemon', 'vendor/bin/qcc-vendor', 'vendor/bin/qms', 'vendor/lib64/libqcc_sdk.so', 'vendor/lib64/libcne.so', 'vendor/lib64/libqms_client.so'): blob_fixup()
-        .add_needed('libbinder_shim.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
-    'vendor/etc/media_codecs_cliffs_v1.xml': blob_fixup()
+    ('vendor/etc/media_codecs_pineapple.xml', 'vendor/etc/media_codecs_cliffs_v1.xml'): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
-        .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm7675-common',
-    'oneplus',
+    "sm7675-common",
+    "oneplus",
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     utils = ExtractUtils.device(module)
     utils.run()
