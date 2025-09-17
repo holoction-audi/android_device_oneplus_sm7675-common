@@ -12,13 +12,13 @@ namespace vendor {
 namespace lineage {
 namespace touch {
 
-const int TouchscreenGesture::kSupportedGestures = makeBitField(
-        kGestureUpVee, kGestureDownVee, kGestureLeftVee, kGestureRightVee,
-        kGestureCircle, kGestureDoubleSwipe,
-        kGestureLeftToRight, kGestureRightToLeft, kGestureUpToDown, kGestureDownToUp,
-        kGestureM, kGestureW, kGestureSingleTap);
+const int TouchscreenGesture::kSupportedGestures =
+    makeBitField(kGestureUpVee, kGestureDownVee, kGestureLeftVee,
+                 kGestureRightVee, kGestureCircle, kGestureDoubleSwipe,
+                 kGestureLeftToRight, kGestureRightToLeft, kGestureUpToDown,
+                 kGestureDownToUp, kGestureM, kGestureW);
 
-}  // namespace touch
-}  // namespace lineage
-}  // namespace vendor
-}  // namespace aidl
+} // namespace touch
+} // namespace lineage
+} // namespace vendor
+} // namespace aidl
